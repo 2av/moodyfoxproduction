@@ -1,0 +1,71 @@
+# .NET Core
+bin/
+obj/
+out/
+
+# ASP.NET
+.vscode/
+*.dbmdl
+*.log
+*.sql
+*.pdb
+*.user
+*.lock.json
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+[Tt]emp/
+*.ide/
+
+# Rider
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Package Management
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Entity Framework
+*.edmx
+*.edmx.diagram
+*.edmx.sql
+
+# Database
+*.mdf
+*.ldf
+
+# Azure
+local.settings.json
+azure-pipelines.yml
+.vscode/settings.json
+
+# Additional files
+*.swp
+*.bak
+*.orig
+*.rej
+*.manifest
+*.log

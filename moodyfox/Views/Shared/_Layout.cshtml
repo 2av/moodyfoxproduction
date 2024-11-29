@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../Assets/css/animate.min.css">
+    <link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/css/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/layout.css">
+    <title>Moody Fox</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="~/Assets/img/Logo_header.png" alt="">
+                        <span>
+                            <big>MOODY <tag class="text-primary">FOX</tag></big>
+                            <small>PRODUCTIONS</small>
+                        </span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Service">SERVICES</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">
+                                    OUR PROCESS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        @RenderBody()
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="footer-logo text-center">
+                            <a href="">
+                                <img src="~/Assets/img/Logo_footer.png" alt="logo">
+                                <p>Moody Fox Productions</p>
+                            </a>
+                            <ul class="socialIcons">
+                                <li><a href=""><img class="img-fluid" src="Assets/img/linkedin_2504923.png" alt=""></a></li>
+                                <li>
+                                    <a href=""><img class="img-fluid" src="Assets/img/instagram_2504918.png" alt=""></a>
+                                </li>
+                                <li><a href=""><img class="img-fluid" src="Assets/img/facebook_2504903.png" alt=""></a></li>
+                                <li><a href=""><img class="img-fluid" src="Assets/img/youtube_2504965.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="foot-menu d-flex flex-wrap row">
+                            <div class="col">
+                                <h5 class="footheading">Our Company</h5>
+                                <ul>
+                                    <li><a href="/Service">Services</a></li>
+                                    <li><a href="">Work Process</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <h5 class="footheading">Contact us</h5>
+                                <ul>
+                                    <li>
+                                        <a href="tel:+91-7304071081">
+                                            <img src="~/Assets/img/Call.png" alt="Call">
+                                            +91-7304071081
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:moodyfoxproductions@gmail.com">
+                                            <img src="~/Assets/img/Mail.png"
+                                                 alt=""> moodyfoxproductions@gmail.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="~/Assets/js/jquery.slim.min.js"></script>
+        <script src="~/Assets/js/bootstrap.bundle.min.js"></script>
+        <script src="~/Assets/js/wow.min.js"></script>
+        <script src="~/Assets/js/owl.carousel.js"></script>
+
+        <script>
+
+            $(document).ready(function () {
+                $('.banner').owlCarousel({
+                    items: 1,
+                    lazyLoad: true,
+                    loop: true,
+                    margin: 10
+
+                })
+
+                new WOW().init();
+
+            });
+        </script>
+</body>
+
+</html>
