@@ -1,0 +1,142 @@
+
+
+@font-face {
+    font-family: 'barlowblack';
+    src: url('../fonts/barlow-black-webfont.woff2') format('woff2'),
+         url('barlow-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;   
+
+}
+@font-face {
+    font-family: 'barlowbold';
+    src: url('../fonts/barlow-bold-webfont.woff2') format('woff2'),
+         url('barlow-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowextrabold';
+    src: url('../fonts/barlow-extrabold-webfont.woff2') format('woff2'),
+         url('barlow-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowextralight';
+    src: url('../fonts/barlow-extralight-webfont.woff2') format('woff2'),
+         url('barlow-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowlight';
+    src: url('../fonts/barlow-light-webfont.woff2') format('woff2'),
+         url('barlow-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowmedium';
+    src: url('../fonts/barlow-medium-webfont.woff2') format('woff2'),
+         url('barlow-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowregular';
+    src: url('../fonts/barlow-regular-webfont.woff2') format('woff2'),
+         url('barlow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowsemibold';
+    src: url('../fonts/barlow-semibold-webfont.woff2') format('woff2'),
+         url('barlow-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowthin';
+    src: url('../fonts/barlow-thin-webfont.woff2') format('woff2'),
+         url('barlow-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { font-size: 16px;   font-family: barlowregular;}
+.btn-lg { font-size: 24px; font-weight: bold;}
+.btn-primary { background-color: #fe9000; border-color: #fe9000; color: #161616; font-weight: 500;}
+.btn-primary:hover ,.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus { box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); background-color: #fe9000; border-color: #fe9000;}
+ul , li { list-style: none; padding: 0;}
+.text-primary { color: #fe9000 !important;}
+/* Header */
+header .navbar-brand  { display: flex;}
+header .navbar-brand span { display: flex; flex-direction: column; line-height: 27px; justify-content: center; font-size: 27px; font-weight: bold; padding-left: 10px;}
+header .navbar-brand span small { font-size: 18px; font-weight: bold;}
+.navbar-nav { margin-left: auto; margin-right: 0;}
+.navbar-light .navbar-nav .nav-link { color: #000; font-weight: bold; text-transform: uppercase; font-size: 18px;}
+
+.blog-wrap { background-color: #efefef; padding: 80px 0;}
+.heading { font-size: 48px; font-weight: bold; text-align: center; margin-bottom: 40px; position: relative; color: #505050;}
+.heading::after { content: "";height: 1px;display: inline-block;border-bottom: solid 1px #505050;width: 200px;position: absolute;bottom: 0;top: auto;margin: 0 auto;left: 0;right: 0;}
+
+.blog-card .sub-heading { font-weight: bold; color: #505050; position: relative;}
+.blog-card .sub-heading::after { content: "";height: 1px;display: inline-block;border-bottom: solid 1px #505050;width: 200px;position: absolute;bottom: -5px;margin-left: 0;margin-right: auto;left: 0;}
+
+.blog-foot      { display: flex; align-items: center; justify-content: space-between;}
+.blog-foot .btn-danger { background-color: #fe361c; font-size: 12px; border-color: #fe361c; border-radius: 8px;}
+
+
+.blog-saidbar { background-color: #f7f7f7; padding: 10px; border-radius: 8px;}
+.saidbar-heading { font-size: 16px; font-weight: bold; position: relative;}
+.saidbar-heading::after { content: "";height: 1px;display: inline-block;border-bottom: solid 1px #505050;width: 100px;position: absolute;right: -10%;transform: translate(-50% , -10%);top: 50%;}
+
+.card-wrap { margin-bottom: 50px;}
+.cards a { display: flex; align-items: center; position: relative; }
+.cards .cards-img {width: 30%; position: relative; z-index: 1;}
+.cards .cards-text {  background-color: #fe361c;font-size: 12px;width: 90%;display: inline-block;vertical-align: middle; border-radius: 6px;position: absolute; transition: 0.5s;}
+.cards.left-img .cards-text {right: 0; text-align: right; }
+.cards.right-img .cards-text { left: 0; text-align: left;}
+.cards.right-img .cards-img {  margin-left: auto;}
+.cards .cards-text p { margin: 0; color: #fff; padding: 10px; }
+.cards.right-img a:hover .cards-text { padding-left: 5px; font-weight: bold; color: #505050;}
+.cards.left-img a:hover .cards-text { padding-right: 5px; font-weight: bold; color: #505050;}
+
+.blog-saidbar .social { margin-bottom: 50px;}
+.blog-saidbar .social .social-icon { display: flex; justify-content: center;}
+.blog-saidbar .social .social-icon li { }
+.blog-saidbar .social .social-icon li a { padding: 5px; display: block;}
+.blog-saidbar .social .social-icon li a img { max-width: 35px;}
+
+.blog-saidbar .contect-us { margin-bottom: 50px;}
+.blog-saidbar .contect-us p { display: flex; flex-direction: column;}
+/* footer */
+footer { background-color: #191928; padding: 40px 0;}
+.footer-logo a { color: #fff;}
+.socialIcons { display: flex; justify-content: center; }
+.socialIcons li { padding: 10px; width: 50px;}
+footer .foot-menu { display: flex;}
+.footheading { font-size: 25px; color: #fe9000; position: relative;}
+.footheading:after { position: absolute; content: ""; background: #fe9000; width: 90px; height: 2px; bottom: -10px; left: 0;}
+footer .foot-menu ul { padding-top: 20px;}
+footer .foot-menu li a { color: #fff;}
+
+footer .foot-menu li a img { width: 30px; padding: 0 5px;}
+
+
+
+
+/* Inner */
+.blog-detail-main {}
+.detail-content .main-heading { font-size: 20px; font-weight: bold; border-bottom: solid 2px #505050; display: inline-block; margin-top: 30px; margin-bottom: 30px;}
+.detail-content .main-heading p { font-size: 14px; color: #505050;}

@@ -1,4 +1,9 @@
-﻿<!doctype html>
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,21 +13,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../Assets/css/animate.min.css">
-    <link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../Assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Assets/blog/css/animate.min.css">
+    <link rel="stylesheet" href="../Assets/blog/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/blog/css/owl.theme.default.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Assets/css/layout.css">
+    <link rel="stylesheet" href="../Assets/blog/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/blog/css/layout.css">
     <title>Moody Fox</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand wow animate__animated animate__fadeInDown" href="index.html">
-                        <img src="Assets/img/Logo_header.png" alt="">
+                        <img src="../Assets/blog/img/Logo_header.png" alt="">
                         <span>
                             <big>MOODY <tag class="text-primary">FOX</tag></big>
                             <small>PRODUCTIONS</small>
@@ -53,7 +59,6 @@
                 </nav>
             </div>
         </header>
-
         @RenderBody()
         <footer>
             <div class="container">
@@ -61,16 +66,34 @@
                     <div class="col-sm-5">
                         <div class="footer-logo text-center">
                             <a href="index.html" class="wow animate__animated animate__fadeInUp">
-                                <img src="Assets/img/Logo_footer.png" alt="logo">
+                                <img src="../Assets/blog/img/Logo_footer.png" alt="logo">
                                 <p>Moody Fox Productions</p>
                             </a>
                             <ul class="socialIcons">
-                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="Assets/img/linkedin_2504923.png" alt=""></a></li>
                                 <li class="wow animate__animated animate__fadeInUp">
-                                    <a href=""><img class="img-fluid" src="Assets/img/instagram_2504918.png" alt=""></a>
+                                    <a href="">
+                                        <img class="img-fluid"
+                                             src="../Assets/blog/img/linkedin_2504923.png" alt="">
+                                    </a>
                                 </li>
-                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="Assets/img/facebook_2504903.png" alt=""></a></li>
-                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="Assets/img/youtube_2504965.png" alt=""></a></li>
+                                <li class="wow animate__animated animate__fadeInUp">
+                                    <a href="">
+                                        <img class="img-fluid"
+                                             src="../Assets/blog/img/instagram_2504918.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="wow animate__animated animate__fadeInUp">
+                                    <a href="">
+                                        <img class="img-fluid"
+                                             src="../Assets/blog/img/facebook_2504903.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="wow animate__animated animate__fadeInUp">
+                                    <a href="">
+                                        <img class="img-fluid"
+                                             src="../Assets/blog/img/youtube_2504965.png" alt="">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -90,13 +113,13 @@
                                 <ul>
                                     <li class="wow animate__animated animate__fadeInUp">
                                         <a href="tel:+91-7304071081">
-                                            <img src="Assets/img/Call.png" alt="Call">
+                                            <img src="../Assets/blog/img/Call.png" alt="Call">
                                             +91-7304071081
                                         </a>
                                     </li>
                                     <li class="wow animate__animated animate__fadeInUp">
                                         <a href="mailto:moodyfoxproductions@gmail.com">
-                                            <img src="Assets/img/Mail.png"
+                                            <img src="../Assets/blog/img/Mail.png"
                                                  alt=""> moodyfoxproductions@gmail.com
                                         </a>
                                     </li>
@@ -109,10 +132,10 @@
         </footer>
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="Assets/js/jquery.slim.min.js"></script>
-        <script src="Assets/js/bootstrap.bundle.min.js"></script>
-        <script src="Assets/js/wow.min.js"></script>
-        <script src="Assets/js/owl.carousel.js"></script>
+        <script src="../Assets/blog/js/jquery.slim.min.js"></script>
+        <script src="../Assets/blog/js/bootstrap.bundle.min.js"></script>
+        <script src="../Assets/blog/js/wow.min.js"></script>
+        <script src="../Assets/blog/js/owl.carousel.js"></script>
 
         <script>
 
@@ -129,7 +152,7 @@
 
             });
         </script>
-        </div>
+    </div>
 </body>
 
 </html>
