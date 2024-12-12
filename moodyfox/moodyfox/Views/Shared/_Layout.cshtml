@@ -14,6 +14,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/css/layout.css">
+    <link rel="stylesheet" href="../Assets/css/responsive.css">
     <title>Moody Fox</title>
 </head>
 <body>
@@ -21,6 +22,9 @@
         <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="mob-menu">
+                        <img src="Assets/img/option icon.png" alt="">
+                    </div>
                     <a class="navbar-brand wow animate__animated animate__fadeInDown" href="index.html">
                         <img src="Assets/img/Logo_header.png" alt="">
                         <span>
@@ -30,12 +34,15 @@
                     </a>
                     <div class="collapse navbar-collapse  wow animate__animated animate__fadeInUp"
                          id="navbarSupportedContent">
+                        <div class="mob-menu">
+                            <img src="Assets/img/close.png" width="20" alt="">
+                        </div>
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">SERVICES</a>
+                                <a class="nav-link" href="/service">SERVICES</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="#">
@@ -109,10 +116,12 @@
         </footer>
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="Assets/js/jquery.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         <script src="Assets/js/bootstrap.bundle.min.js"></script>
         <script src="Assets/js/wow.min.js"></script>
         <script src="Assets/js/owl.carousel.js"></script>
+        <script src="~/Assets/js/layout.js"></script>
 
         <script>
 
@@ -129,7 +138,7 @@
 
             });
         </script>
-        </div>
+    </div>
 </body>
 
 </html>

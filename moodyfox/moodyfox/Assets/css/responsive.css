@@ -1,5 +1,147 @@
-@media (max-width: 768px) {
-    .brand-boost-wrap { flex-direction: column;}
-    .brand-boost-wrap .brand-boost-img { order: 0; flex-basis: 100%; max-width: 100%;}
-    .brand-boost-wrap .brand-boost-content { order: 1; flex-basis: 100%; max-width: 100%;}
+@media only screen and (max-width: 991px) {
+    .btn-lg { font-size:20px;}
+    .mob-menu {
+        display: block;
+    }
+
+    .navbar-light .navbar-brand {
+        margin: 0 auto;
+    }
+
+    #navbarSupportedContent {
+        position: fixed;
+        top: 0;
+        z-index: 11;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        padding: 20px
+    }
+
+    .navbar-nav {
+        padding: 20px
+    }
+    .banner .banner-slider {
+        min-height: 250px;
+        background: #1a1927; }
+        .banner .banner-slider img { object-fit:contain;}
+        .banner-text {
+            width: 400px;
+        }
+    .banner-text h4 {
+        font-size: 32px; line-height:normal;
+    }
+        .banner-text p {
+            font-size: 18px;
+            line-height: normal;
+        }
+    .row-items-3 .col {
+        max-width: calc( 100% / 2);
+        flex-basis: calc( 100% / 2);
+    }
+
+    .Video-boost h2 { font-size:38px;}
+
+    .about-wrap { flex-direction:column;}
+    .about-wrap .col { margin:15px auto;}
+
+    .about-us { padding:40px 0;}
+    .about-us .heading {
+        padding-bottom: 40px;
+        font-size: 32px;
+    }
+        .about-us .about-left .about-top .heading-top { font-size:38px;}
+        .about-us .about-left .about-top p { font-size:26px;}
+
+    .clients { padding:40px 0;}
+    .contect-form {
+        overflow: hidden;
+        background-size: 50% auto;
+    }
+
+        .contect-form .form-wrap {
+            max-width: 100%;
+        }
+
+            .contect-form .form-wrap::before {
+                background-size: 20%;
+                bottom: -85%;
+                left: 30%;
+            }
+
+            .contect-form .form-wrap::after {
+                background-size: 60%;
+                right: -40%;
+                top: 18%;
+            }
+
+
+
+    #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
+        width: 90%;
+    }
+
+    
+    .Animation-2d h2 {
+        font-size: 32px;
+    }
+    .Animation-vedio-2d-foot {
+        padding: 0px;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+        .brand-boost-wrap { flex-direction: column; }
+
+       .brand-boost-wrap .brand-boost-img {
+                order: 0;
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+      .brand-boost-wrap .brand-boost-content {
+                order: 1;
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        .banner-text h4 {
+            font-size: 28px;
+        }
+
+        .banner-text p {
+            font-size: 16px;
+        }
+        .Video-boost { padding:40px 0; margin:20px auto;}
+        .Video-boost h2 {
+            font-size: 38px;
+        }
+
+        .Animation-2d { margin:20px auto;}
+        .footheading {
+            font-size: 22px;
+        }
+    }
+
+@media only screen and (max-width: 557px) {
+    .row-items-3 .col {
+        max-width: 100% ;
+        flex-basis:100% ;
+    }
+    .banner-text { width:200px;}
+    .banner-text h4 {
+        font-size: 22px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 557px) {
+    .banner-text { top:20%; right:10%;}
+
 }
