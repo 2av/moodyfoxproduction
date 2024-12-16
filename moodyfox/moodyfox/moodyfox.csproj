@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Global.asax.cs">
@@ -228,26 +229,28 @@
     <Content Include="Assets\img\Categories\05.png" />
     <Content Include="Assets\img\Categories\06.png" />
     <Content Include="Assets\img\Categories\07.png" />
-    <Content Include="Assets\img\clients\636b999a619a40bec2a4c5c3.png" />
     <Content Include="Assets\img\clients\airtel.png" />
     <Content Include="Assets\img\clients\Byju-s.png" />
     <Content Include="Assets\img\clients\cadbury.png" />
     <Content Include="Assets\img\clients\Complan.png" />
+    <Content Include="Assets\img\clients\cosmos.png" />
     <Content Include="Assets\img\clients\harpic.png" />
     <Content Include="Assets\img\clients\HDFC.png" />
     <Content Include="Assets\img\clients\hershey.png" />
     <Content Include="Assets\img\clients\mahindra.png" />
     <Content Include="Assets\img\clients\nestle_logo_3.png" />
-    <Content Include="Assets\img\clients\tata capital.png" />
-    <Content Include="Assets\img\clients\Thomson Reuters Eikon.png" />
+    <Content Include="Assets\img\clients\tata-capital.png" />
+    <Content Include="Assets\img\clients\Thomson-Reuters-Eikon.png" />
     <Content Include="Assets\img\clients\unfoldu.png" />
     <Content Include="Assets\img\clients\usp.png" />
     <Content Include="Assets\img\clients\Yamaha-Motor-logo.png" />
     <Content Include="Assets\img\close.png" />
     <Content Include="Assets\img\facebook_2504903.png" />
     <Content Include="Assets\img\form-bg.png" />
+    <Content Include="Assets\img\fox.png" />
     <Content Include="Assets\img\fox_08.png" />
     <Content Include="Assets\img\higher-conversion.jpg" />
+    <Content Include="Assets\img\higher-conversion.png" />
     <Content Include="Assets\img\instagram_2504918.png" />
     <Content Include="Assets\img\linkedin_2504923.png" />
     <Content Include="Assets\img\Logo_footer.png" />
@@ -255,6 +258,7 @@
     <Content Include="Assets\img\Mail.png" />
     <Content Include="Assets\img\option icon.png" />
     <Content Include="Assets\img\plant.png" />
+    <Content Include="Assets\img\play-btn.png" />
     <Content Include="Assets\img\Services images1\3d animation 01.jpg" />
     <Content Include="Assets\img\Services images1\3d product.jpeg" />
     <Content Include="Assets\img\Services images1\design.jpg" />
@@ -288,6 +292,15 @@
     <Content Include="Assets\img\Services-images\05 Explainer Video service\Onboarding.png" />
     <Content Include="Assets\img\Services-images\05 Explainer Video service\Product demonstration.png" />
     <Content Include="Assets\img\Services-images\05 Explainer Video service\service explaination.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\App &amp; software intro.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Benefits of Motion Graphics.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Brand Awareness.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\corporate presentation.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Event Promotion.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\image01.jpg" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Marketing Campaigns.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Product Demonstration.png" />
+    <Content Include="Assets\img\Services-images\06 Motion Graphic service\Tutorials &amp; Trainings.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\animation-stories.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\how-to-video.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\image01.jpg" />
@@ -305,6 +318,7 @@
     <Content Include="Assets\img\Services-images\motion graphic.jpg" />
     <Content Include="Assets\img\Services-images\portrait-man-cartoon-style.jpg" />
     <Content Include="Assets\img\Services-images\website-development.jpg" />
+    <Content Include="Assets\img\video-bg.jpg" />
     <Content Include="Assets\img\youtube_2504965.png" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\js\jquery.slim.min.js" />
@@ -373,6 +387,10 @@
     <Content Include="Views\Service\_3DProductVideos.cshtml" />
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Service\_ExplainerVideos.cshtml" />
+    <Content Include="Views\Service\_MotionGraphicsService.cshtml" />
+    <Content Include="Views\Shared\_ContactUs.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
