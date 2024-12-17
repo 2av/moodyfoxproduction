@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\FaqController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Global.asax.cs">
@@ -301,6 +302,13 @@
     <Content Include="Assets\img\Services-images\06 Motion Graphic service\Marketing Campaigns.png" />
     <Content Include="Assets\img\Services-images\06 Motion Graphic service\Product Demonstration.png" />
     <Content Include="Assets\img\Services-images\06 Motion Graphic service\Tutorials &amp; Trainings.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Benefits of E learning.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Compliance Training.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Corporate Training.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Educational Institutions.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Medical &amp; Healthcare training.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Non Profit &amp; Advocasy.png" />
+    <Content Include="Assets\img\Services-images\07 E-Learning Service\Profit &amp; Software training.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\animation-stories.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\how-to-video.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\image01.jpg" />
@@ -388,9 +396,11 @@
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Service\_ExplainerVideos.cshtml" />
-    <Content Include="Views\Service\_MotionGraphicsService.cshtml" />
+    <Content Include="Views\Service\_MotionGraphics.cshtml" />
     <Content Include="Views\Shared\_ContactUs.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
+    <Content Include="Views\Service\_eLearningVideos.cshtml" />
+    <Content Include="Views\Faq\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

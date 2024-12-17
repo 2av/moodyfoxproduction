@@ -25,7 +25,11 @@ namespace moodyfox.Controllers
         {
             return View();
         }
-        public ActionResult _MotionGraphicsService()
+        public ActionResult _MotionGraphics()
+        {
+            return View();
+        }
+        public ActionResult _eLearningVideos()
         {
             return View();
         }
