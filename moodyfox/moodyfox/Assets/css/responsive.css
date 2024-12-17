@@ -1,5 +1,4 @@
-@media only screen and (max-width: 991px) {
-    .btn-lg { font-size:20px;}
+@media only screen and (max-width: 991px) { 
     .mob-menu {
         display: block;
     }
@@ -24,39 +23,43 @@
     .navbar-nav {
         padding: 20px
     }
-    .banner .banner-slider {
-        min-height: 250px;
-        background: #1a1927; }
-        .banner .banner-slider img { object-fit:contain;}
-        .banner-text {
-            width: 400px;
-        }
-    .banner-text h4 {
-        font-size: 32px; line-height:normal;
-    }
-        .banner-text p {
-            font-size: 18px;
+    .banner .banner-slider {overflow:hidden; background-position:center left;
+         }
+        .banner .banner-slider .banner-img { margin-left:-10%;}
+        .banner-text h4 {
+            font-size: 60px;
             line-height: normal;
+            padding-bottom:30px;
         }
+    .banner-text p {
+        line-height: normal;
+        padding-bottom: 30px;
+    }
+    .banner-text .btn { font-size:18px; padding:15px;}
     .row-items-3 .col {
         max-width: calc( 100% / 2);
         flex-basis: calc( 100% / 2);
     }
-
-    .Video-boost h2 { font-size:38px;}
-
+    .blue-box{ font-size:30px;}
+    .blue-box p big { font-size:37px;}
+    .lightBlue-box .brand-box-content { padding-top:20px; left:5%;}
+    
+    .lightBlue-box big { font-size:42px;}
+    .lightBlue-box p { line-height:normal !important; font-size:25px;}
+    .red-box .brand-box-content p {
+        margin: 0;
+        font-size: 26px;
+    }
     .about-wrap { flex-direction:column;}
     .about-wrap .col { margin:15px auto;}
 
     .about-us { padding:40px 0;}
-    .about-us .heading {
-        padding-bottom: 40px;
-        font-size: 32px;
+    .btn-hide-responsive { display:none !important;}
+    .btn-hide-desktop{ display:block; }
+    .about-right .about-video { text-align:center; margin-bottom:50px;}
+    .clients {
+         
     }
-        .about-us .about-left .about-top .heading-top { font-size:38px;}
-        .about-us .about-left .about-top p { font-size:26px;}
-
-    .clients { padding:40px 0;}
     .contect-form {
         overflow: hidden;
         background-size: 50% auto;
@@ -77,14 +80,16 @@
                 right: -40%;
                 top: 18%;
             }
+    .contect-form-wrap .enquiry-client { right: -25%;
+    top: 12%;}
 
-
-
-    #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
-        width: 90%;
+        .contect-form-wrap .enquiry-client img {        width: 80%; }
+    .contect-form-wrap .plant { bottom:0;}
+    .contect-form-wrap .plant img {
+        width: 50%;
     }
 
-    
+
     .Animation-2d h2 {
         font-size: 32px;
     }
@@ -107,43 +112,61 @@
                 order: 1;
                 flex-basis: 100%;
                 max-width: 100%;
-            }
-        .banner-text { right:10%;}
+                }
+            .banner-text { padding-left:15px;}
         .banner-text h4 {
-            font-size: 28px;
+            font-size: 46px;
         }
 
         .banner-text p {
-            font-size: 16px;
+            font-size: 20px;
         }
+        .banner-text .btn { line-height:normal; font-size:18px; padding:5px;}
+        .blue-box p big { font-size:32px;}
         .Video-boost { padding:40px 0; margin:20px auto;}
         .Video-boost h2 {
             font-size: 38px;
         }
-
+        .Video-boost p { font-size:16px;}
         .Animation-2d { margin:20px auto;}
+        .about-us .about-left { padding:0 30px;}
+        .about-us .about-left .about-top .heading-top { font-size:42px;}
+        .about-us .about-left .about-top p { font-size:24px;}
+        .about-us .about-left p { font-size:16px;}
+        .btn-hide-desktop { font-size:22px; }
+        .heading { font-size:36px}
+        .client-head p { text-align:justify;}
+        .client-logo li { flex-basis:calc( 100% / 3); max-width:calc( 100% / 3);}
+        .contect-form-wrap .enquiry-client { right:-30%; top:20%;}
+        .contect-form-wrap .enquiry-client img { width:45%;}
+        #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
+            width: 70%;
+        }
+        .contect-form-wrap .plant img { width:45%;}
+        .contect-form-wrap .plant { left:8%;}
         .footheading {
             font-size: 22px;
         }
+
+        footer .foot-menu { flex-direction:column; padding:0 30px;}
+        .copy-right { margin-top:40px;}
+        copy-right p { font-size:16px;}
     }
 
 @media only screen and (max-width: 557px) {
     .row-items-3 .col {
         max-width: 100% ;
         flex-basis:100% ;
-    }
-    .banner-text { width:200px;}
+    } 
     .banner-text h4 {
-        font-size: 22px;
+        font-size: 25px; padding-bottom:10px;
     }
 
     .banner-text p {
         font-size: 16px;
+        font-family: 'barlowregular';
+        padding-bottom: 10px;
     }
 }
 
-
-@media only screen and (max-width: 557px) {
-    .banner-text { top:20%; right:10%;}
-
-}
+ 
