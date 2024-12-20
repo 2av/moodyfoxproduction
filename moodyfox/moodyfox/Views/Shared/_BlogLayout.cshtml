@@ -1,9 +1,4 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -13,11 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../Assets/blog/css/animate.min.css">
-    <link rel="stylesheet" href="../Assets/blog/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../Assets/blog/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Assets/css/animate.min.css">
+    <link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Assets/css/owl.theme.default.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Assets/blog/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/blog/css/layout.css">
     <link rel="stylesheet" href="../Assets/blog/css/responsive.css">
     <title>Moody Fox</title>
@@ -28,8 +23,11 @@
         <header>
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="mob-menu">
+                        <img src="Assets/img/option icon.png" alt="">
+                    </div>
                     <a class="navbar-brand wow animate__animated animate__fadeInDown" href="/">
-                        <img src="../Assets/blog/img/Logo_header.png" alt="">
+                        <img src="Assets/img/Logo_header.png" alt="">
                         <span>
                             <big>MOODY <tag class="text-primary">FOX</tag></big>
                             <small>PRODUCTIONS</small>
@@ -37,23 +35,36 @@
                     </a>
                     <div class="collapse navbar-collapse  wow animate__animated animate__fadeInUp"
                          id="navbarSupportedContent">
+                        <div class="mob-menu">
+                            <img src="Assets/img/close.png" width="20" alt="">
+                        </div>
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="/">Home </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/service">SERVICES</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">
-                                    OUR PROCESS
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    SERVICES
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/service">2D Animation</a></li>
+                                    <li><a class="dropdown-item" href="/service/_3DAnimation">3D Animation</a></li>
+                                    <li><a class="dropdown-item" href="/service/_3DProductVideos">3D Product Videos</a></li>
+                                    <li><a class="dropdown-item" href="/service/_ExplainerVideos">Explainer Videos</a></li>
+                                    <li><a class="dropdown-item" href="/service/_MotionGraphicsService">Motion Graphic Videos</a></li>
+                                </ul>
                             </li>
+                            @*<li class="nav-item ">
+                                    <a class="nav-link" href="#">
+                                        OUR PROCESS
+                                    </a>
+                                </li>*@
                             <li class="nav-item">
                                 <a class="nav-link" href="/blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact us</a>
+                                <a class="nav-link" href="/">Contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -67,34 +78,16 @@
                     <div class="col-sm-5">
                         <div class="footer-logo text-center">
                             <a href="/home" class="wow animate__animated animate__fadeInUp">
-                                <img src="../Assets/blog/img/Logo_footer.png" alt="logo">
-                                <p>Moody Fox Productions</p>
+                                <img class="img-fluid" src="~/Assets/img/Logo_footer.png" alt="logo">
+                                <p class="footer-logo-text">Moody Fox Productions</p>
                             </a>
                             <ul class="socialIcons">
+                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="~/Assets/img/linkedin_2504923.png" alt=""></a></li>
                                 <li class="wow animate__animated animate__fadeInUp">
-                                    <a href="">
-                                        <img class="img-fluid"
-                                             src="../Assets/blog/img/linkedin_2504923.png" alt="">
-                                    </a>
+                                    <a href=""><img class="img-fluid" src="~/Assets/img/instagram_2504918.png" alt=""></a>
                                 </li>
-                                <li class="wow animate__animated animate__fadeInUp">
-                                    <a href="">
-                                        <img class="img-fluid"
-                                             src="../Assets/blog/img/instagram_2504918.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="wow animate__animated animate__fadeInUp">
-                                    <a href="">
-                                        <img class="img-fluid"
-                                             src="../Assets/blog/img/facebook_2504903.png" alt="">
-                                    </a>
-                                </li>
-                                <li class="wow animate__animated animate__fadeInUp">
-                                    <a href="">
-                                        <img class="img-fluid"
-                                             src="../Assets/blog/img/youtube_2504965.png" alt="">
-                                    </a>
-                                </li>
+                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="~/Assets/img/facebook_2504903.png" alt=""></a></li>
+                                <li class="wow animate__animated animate__fadeInUp"><a href=""><img class="img-fluid" src="~/Assets/img/youtube_2504965.png" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,10 +96,10 @@
                             <div class="col">
                                 <h5 class="footheading wow animate__animated animate__fadeInUp">Our Company</h5>
                                 <ul>
-                                    <li class="wow animate__animated animate__fadeInUp"><a href="">Services</a></li>
-                                    <li class="wow animate__animated animate__fadeInUp"><a href="">Work Process</a></li>
+                                    <li class="wow animate__animated animate__fadeInUp"><a href="/service">Services</a></li>
+                                    @*<li class="wow animate__animated animate__fadeInUp"><a href="">Work Process</a></li>*@
                                     <li class="wow animate__animated animate__fadeInUp"><a href="">Blog</a></li>
-                                    <li class="wow animate__animated animate__fadeInUp"><a href="">FAQ</a></li>
+                                    <li class="wow animate__animated animate__fadeInUp"><a href="/faq">FAQ</a></li>
                                 </ul>
                             </div>
                             <div class="col">
@@ -114,13 +107,13 @@
                                 <ul>
                                     <li class="wow animate__animated animate__fadeInUp">
                                         <a href="tel:+91-7304071081">
-                                            <img src="../Assets/blog/img/Call.png" alt="Call">
+                                            <img src="~/Assets/img/Call.png" alt="Call">
                                             +91-7304071081
                                         </a>
                                     </li>
                                     <li class="wow animate__animated animate__fadeInUp">
                                         <a href="mailto:moodyfoxproductions@gmail.com">
-                                            <img src="../Assets/blog/img/Mail.png"
+                                            <img src="~/Assets/img/Mail.png"
                                                  alt=""> moodyfoxproductions@gmail.com
                                         </a>
                                     </li>
@@ -129,14 +122,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="copy-right">
+                    <p>Moody Fox <span>P</span>roductions. <span>A</span>ll <span>R</span>ights <span>R</span>eserved..</p>
+                </div>
             </div>
         </footer>
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="../Assets/blog/js/jquery.slim.min.js"></script>
-        <script src="../Assets/blog/js/bootstrap.bundle.min.js"></script>
-        <script src="../Assets/blog/js/wow.min.js"></script>
-        <script src="../Assets/blog/js/owl.carousel.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="Assets/js/bootstrap.min.js"></script>
+        <script src="Assets/js/wow.min.js"></script>
+        <script src="Assets/js/owl.carousel.js"></script>
+        <script src="~/Assets/js/layout.js"></script>
 
         <script>
 
