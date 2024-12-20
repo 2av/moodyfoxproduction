@@ -121,7 +121,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogController.cs" />
-    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\FaqController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
@@ -401,7 +400,6 @@
     <Content Include="Views\Service\_ExplainerVideos.cshtml" />
     <Content Include="Views\Service\_MotionGraphics.cshtml" />
     <Content Include="Views\Shared\_ContactUs.cshtml" />
-    <Content Include="Views\ContactUs\Index.cshtml" />
     <Content Include="Views\Service\_eLearningVideos.cshtml" />
     <Content Include="Views\Faq\Index.cshtml" />
   </ItemGroup>
