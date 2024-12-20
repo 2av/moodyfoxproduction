@@ -128,6 +128,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EnquiryFormViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +210,7 @@
     <Content Include="Assets\img\Article08.png" />
     <Content Include="Assets\img\Article09.png" />
     <Content Include="Assets\img\banner.jpeg" />
+    <Content Include="Assets\img\bg-banner.jpg" />
     <Content Include="Assets\img\blog-call.png" />
     <Content Include="Assets\img\Blog-Mail.png" />
     <Content Include="Assets\img\boy.png" />
@@ -260,6 +262,7 @@
     <Content Include="Assets\img\option icon.png" />
     <Content Include="Assets\img\plant.png" />
     <Content Include="Assets\img\play-btn.png" />
+    <Content Include="Assets\img\service-fox.jpg" />
     <Content Include="Assets\img\Services images1\3d animation 01.jpg" />
     <Content Include="Assets\img\Services images1\3d product.jpeg" />
     <Content Include="Assets\img\Services images1\design.jpg" />
@@ -329,6 +332,7 @@
     <Content Include="Assets\img\video-bg.jpg" />
     <Content Include="Assets\img\youtube_2504965.png" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
     <Content Include="Assets\js\jquery.slim.min.js" />
     <Content Include="Assets\js\layout.js" />
     <Content Include="Assets\js\owl.carousel.js" />
@@ -350,7 +354,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\fonts\barlow-black-webfont.woff" />

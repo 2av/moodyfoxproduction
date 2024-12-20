@@ -6,7 +6,10 @@
             <div class="plant">
                 <img class="img-fluid wow animate__animated animate__zoomIn" src="~/Assets/img/plant.png">
             </div>
-            <form action="" class="form-wrap wow animate__animated animate__zoomIn">
+            <form action="/Home/SendEmail" method="post" class="form-wrap wow animate__animated animate__zoomIn">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="__RequestVerificationToken" value="@ViewData["__RequestVerificationToken"]" />
+
                 <div class="form-head text-center">
                     <h2 class="heading">ENQUIRY FORM</h2>
                     <small>
@@ -61,7 +64,21 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-primary">SUBMIT</button>
+                        <input type="submit" class="btn btn-primary" value="" />
+                        @if (TempData["Success"] != null)
+                        {
+                            <div class="alert alert-success">
+                                @TempData["Success"]
+                            </div>
+                        }
+
+                        @if (TempData["Error"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["Error"]
+                            </div>
+                        }
+
                     </div>
                 </div>
             </form>
@@ -71,3 +88,56 @@
         </div>
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#enquiryForm').on('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            var formData = {
+                FirstName: $('#fname').val(),
+                LastName: $('#Lname').val(),
+                Email: $('#email').val(),
+                Contact: $('#contact').val(),
+                ReferenceVideo: $('#feference-video').val(),
+                ServiceRequirement: $('#Service-Requirement').val(),
+                Message: $('textarea').val()
+            };
+
+            // Send AJAX request
+            $.ajax({
+                url: '/Home/SendEmail', // Update the URL to your controller action
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function (response) {
+                    alert('Enquiry submitted successfully!');
+                    // Optionally, clear the form
+                    $('#enquiryForm')[0].reset();
+                },
+                error: function (xhr, status, error) {
+                    alert('An error occurred: ' + xhr.responseText);
+                }
+            });
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                url: '/Home/SendEmail',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                success: function (response) {
+                    alert(response.message);
+                },
+                error: function (xhr, status, error) {
+                    alert('An error occurred: ' + xhr.responseText);
+                }
+            });
+
+        });
+    });
+</script>
