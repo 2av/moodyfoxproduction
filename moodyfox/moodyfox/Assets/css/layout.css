@@ -396,3 +396,18 @@ footer .foot-menu li a img { width: 30px; padding: 0 5px;}
         right: -3%;
         top: 3%;
     }
+
+.brand-text { background-color: #191927; padding:67px 0; color:#fff; font-size:33px; text-align:center;}
+.brand-qute { font-size:80px; line-height:0px; margin:0px;}
+
+.faq                    { padding: 100px 0; background-color:#f0f0f0; }
+.faq .heading           { padding-bottom:60px;}
+.faq .card               { margin-bottom: 14px; box-shadow: 3px 0px 7px rgb(32 129 211 / 25%); border-radius: 10px !important; }
+.faq .card .card-header { background: transparent; padding: 0px; border-radius: 10px; }
+.faq .card .card-header h2 { font-size: 20px; padding:10px; }
+.faq .card .card-header [aria-expanded="true"] { background-color:#2f2f4c; color:#fff;}
+.faq .card .card-header [aria-expanded="false"]:after { content:"+"; position:absolute; right:30px; font-size:30px; top:2px;}
+.faq .card .card-header [aria-expanded="true"]:after { content:"-";position:absolute; right:30px; font-size:30px; top:2px;}
+.faq .card p               { color:#0c0c0c;}
+.faq .card .card-header h2 , .faq .card-body { padding:10px 60px;}
+.faq .card .card-body { font-size:18px;}
