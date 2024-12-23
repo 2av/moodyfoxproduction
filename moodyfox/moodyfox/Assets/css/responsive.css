@@ -1,12 +1,10 @@
-@media only screen and (max-width: 991px) { 
+@media only screen and (max-width: 991px) {
     .mob-menu {
         display: block;
     }
-
     .navbar-light .navbar-brand {
         margin: 0 auto;
     }
-
     #navbarSupportedContent {
         position: fixed;
         top: 0;
@@ -19,165 +17,306 @@
         transition: all 0.3s ease;
         padding: 20px
     }
-
     .navbar-nav {
         padding: 20px
     }
-    .banner .banner-slider {overflow:hidden; background-position:center left;
-         }
-        .banner .banner-slider .banner-img { margin-left:-10%;}
-        .banner-text h4 {
-            font-size: 60px;
-            line-height: normal;
-            padding-bottom:30px;
-        }
+    .banner .banner-slider {
+        overflow: hidden;
+        background-position: top right;
+    }
+    .banner .banner-slider .banner-img {
+        margin-left: -10%;
+    }
+    .banner-text h4 {
+        font-size: 60px;
+        line-height: normal;
+        padding-bottom: 30px;
+    }
     .banner-text p {
         line-height: normal;
         padding-bottom: 30px;
     }
-    .banner-text .btn { font-size:18px; padding:15px;}
+    .banner-text .btn {
+        font-size: 18px;
+        padding: 15px;
+    }
     .row-items-3 .col {
         max-width: calc( 100% / 2);
         flex-basis: calc( 100% / 2);
     }
-    .blue-box{ font-size:30px;}
-    .blue-box p big { font-size:37px;}
-    .lightBlue-box .brand-box-content { padding-top:20px; left:5%;}
-    
-    .lightBlue-box big { font-size:42px;}
-    .lightBlue-box p { line-height:normal !important; font-size:25px;}
+    .blue-box {
+        font-size: 30px;
+    }
+    .blue-box p big {
+        font-size: 37px;
+    }
+    .lightBlue-box .brand-box-content {
+        padding-top: 20px;
+        left: 5%;
+    }
+    .lightBlue-box big {
+        font-size: 42px;
+    }
+    .lightBlue-box p {
+        line-height: normal !important;
+        font-size: 25px;
+    }
     .red-box .brand-box-content p {
         margin: 0;
         font-size: 26px;
     }
-    .about-wrap { flex-direction:column;}
-    .about-wrap .col { margin:15px auto;}
-
-    .about-us { padding:40px 0;}
-    .btn-hide-responsive { display:none !important;}
-    .btn-hide-desktop{ display:block; }
-    .about-right .about-video { text-align:center; margin-bottom:50px;}
-    .clients {
-         
+    .about-wrap {
+        flex-direction: column;
     }
+    .about-wrap .col {
+        margin: 15px auto;
+    }
+    .about-us {
+        padding: 40px 0;
+    }
+    .btn-hide-responsive {
+        display: none !important;
+    }
+    .btn-hide-desktop {
+        display: block;
+    }
+    .about-right .about-video {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .clients { }
     .contect-form {
         overflow: hidden;
         background-size: 50% auto;
     }
-
-        .contect-form .form-wrap {
-            max-width: 100%;
-        }
-
-            .contect-form .form-wrap::before {
-                background-size: 20%;
-                bottom: -85%;
-                left: 30%;
-            }
-
-            .contect-form .form-wrap::after {
-                background-size: 60%;
-                right: -40%;
-                top: 18%;
-            }
-    .contect-form-wrap .enquiry-client { right: -25%;
-    top: 12%;}
-
-        .contect-form-wrap .enquiry-client img {        width: 80%; }
-    .contect-form-wrap .plant { bottom:0;}
+    .contect-form .form-wrap {
+        max-width: 100%;
+    }
+    .contect-form .form-wrap::before {
+        background-size: 20%;
+        bottom: -85%;
+        left: 30%;
+    }
+    .contect-form .form-wrap::after {
+        background-size: 60%;
+        right: -40%;
+        top: 18%;
+    }
+    .contect-form-wrap .enquiry-client {
+        right: -25%;
+        top: 12%;
+    }
+    .contect-form-wrap .enquiry-client img {
+        width: 80%;
+    }
+    .contect-form-wrap .plant {
+        bottom: 0;
+    }
     .contect-form-wrap .plant img {
         width: 50%;
     }
-
-
     .Animation-2d h2 {
         font-size: 32px;
     }
     .Animation-vedio-2d-foot {
         padding: 0px;
     }
-
-    
-    .service-banner { background-size:auto;}
-        .benefits { background-image:none;}
-    .benefits-body { padding:0;}
+    .service-banner {
+        background-size: auto;
+    }
+    .benefits {
+        background-image: none;
+    }
+    .benefits-body {
+        padding: 0;
+    }
 }
 
-    @media only screen and (max-width: 768px) {
-        .brand-boost-wrap { flex-direction: column; }
-
-
-       .brand-boost-wrap .brand-boost-img {
-                order: 0;
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-
-      .brand-boost-wrap .brand-boost-content {
-                order: 1;
-                flex-basis: 100%;
-                max-width: 100%;
-                }
-            .banner-text { padding-left:15px;}
-        .banner-text h4 {
-            font-size: 46px;
-        }
-
-        .banner-text p {
-            font-size: 20px;
-        }
-        .banner-text .btn { line-height:normal; font-size:18px; padding:5px;}
-        .blue-box p big { font-size:32px;}
-        .Video-boost { padding:40px 0; margin:20px auto;}
-        .Video-boost h2 {
-            font-size: 38px;
-        }
-        .Video-boost p { font-size:16px;}
-        .Animation-2d { margin:20px auto;}
-        .about-us .about-left { padding:0 30px;}
-        .about-us .about-left .about-top .heading-top { font-size:42px;}
-        .about-us .about-left .about-top p { font-size:24px;}
-        .about-us .about-left p { font-size:16px;}
-        .btn-hide-desktop { font-size:22px; }
-        .heading { font-size:36px}
-        .client-head p { text-align:justify;}
-        .client-logo li { flex-basis:calc( 100% / 3); max-width:calc( 100% / 3);}
-        .contect-form-wrap .enquiry-client { right:-30%; top:20%;}
-        .contect-form-wrap .enquiry-client img { width:45%;}
-        #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
-            width: 70%;
-        }
-        .contect-form-wrap .plant img { width:45%;}
-        .contect-form-wrap .plant { left:8%;}
-        .footheading {
-            font-size: 22px;
-        }
-
-        footer .foot-menu { flex-direction:column; padding:0 30px;}
-        .copy-right { margin-top:40px;}
-        copy-right p { font-size:16px;}
-        .service-banner-wrap .service-banner-left .btn { display:none;}
-        .service-banner .btn { margin:0 auto; text-transform:uppercase; font-size:20px; font-family: 'barlowsemibold'; display:block;}
-        .service-banner-wrap { display:block; text-align:center;}
-        .service-banner-left, .service-banner-right { flex-basis:100%; max-width:100%;}
-        .service-banner-text { padding:20px ;}
-
+@media only screen and (max-width: 768px) {
+    .brand-boost-wrap {
+        flex-direction: column;
     }
+    .brand-boost-wrap .brand-boost-img {
+        order: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .brand-boost-wrap .brand-boost-content {
+        order: 1;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .banner-text {
+        padding-left: 15px;
+        max-width: 60% !important;
+        flex-basis: 60% !important;
+    }
+    .banner-text h4 {
+        font-size: 46px;
+    }
+    .banner-text p {
+        font-size: 20px;
+    }
+    .banner-text .btn {
+        line-height: normal;
+        font-size: 18px;
+        padding: 5px;
+    }
+    .blue-box p big {
+        font-size: 32px;
+    }
+    .Video-boost {
+        padding: 40px 0;
+        margin: 20px auto;
+    }
+    .Video-boost h2 {
+        font-size: 28px;
+    }
+    .Video-boost p {
+        font-size: 14px;
+    }
+    .Animation-2d {
+        margin: 20px auto;
+    }
+    .brand-boost {
+        padding: 100px 30px;
+    }
+    .red-box {
+        height: auto;
+        padding-bottom: 8%;
+    }
+    .red-box .brand-box-img img {
+        max-width: 55%;
+    }
+    .red-box .brand-box-content p {
+        font-size: 20px;
+    }
+    .red-box .brand-box-content p big {
+        font-size: 26px;
+    }
+    .blue-box {
+        font-size: 23px;
+    }
+    .blue-box p big {
+        font-size: 31px;
+    }
+    .lightBlue-box p {
+        font-size: 23px;
+        margin: 0;
+    }
+    .lightBlue-box big {
+        font-size: 31px;
+    }
+    .lightBlue-box .brand-box-img img {
+        margin: 0;
+        max-width: 100%;
+    }
+    .about-us .heading {
+        font-size: 33px;
+        padding-bottom: 45px;
+    }
+    .about-wrap .col {
+        margin: 0 auto;
+    }
+    .about-us .about-left {
+        padding: 0 30px;
+    }
+    .about-us .about-left .about-top .heading-top {
+        font-size: 36px;
+    }
+    .about-us .about-left .about-top p {
+        font-size: 24px;
+    }
+    .about-us .about-left p {
+        font-size: 16px;
+    }
+    .btn-hide-desktop {
+        font-size: 22px;
+    }
+    .heading {
+        font-size: 33px
+    }
+    .client-head p {
+        text-align: justify;
+    }
+    .client-logo li {
+        flex-basis: calc( 100% / 3);
+        max-width: calc( 100% / 3);
+    }
+    .contect-form-wrap .enquiry-client {
+        right: -30%;
+        top: 20%;
+    }
+    .contect-form-wrap .enquiry-client img {
+        width: 45%;
+    }
+    #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
+        width: 70%;
+    }
+    .contect-form-wrap .plant img {
+        width: 45%;
+    }
+    .contect-form-wrap .plant {
+        left: 8%;
+    }
+    .footheading {
+        font-size: 22px;
+    }
+    footer .foot-menu {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .copy-right {
+        margin-top: 40px;
+    }
+    .copy-right p {
+        font-size: 16px;
+    }
+    .service-banner-wrap .service-banner-left .btn {
+        display: none;
+    }
+    .service-banner .btn {
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'barlowsemibold';
+        display: block;
+    }
+    .service-banner-wrap {
+        display: block;
+        text-align: center;
+    }
+    .service-banner-left, .service-banner-right {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .service-banner-text {
+        padding: 20px;
+    }
+    .services-head p {
+        font-size: 14px;
+    }
+    .brand-text { font-size:18px;}
+    .faq .card .card-header h2, .faq .card-body {
+        padding: 10px 60px 10px 10px;
+    }
+}
 
 @media only screen and (max-width: 557px) {
     .row-items-3 .col {
-        max-width: 100% ;
-        flex-basis:100% ;
-    } 
-    .banner-text h4 {
-        font-size: 25px; padding-bottom:10px;
+        max-width: 100%;
+        flex-basis: 100%;
     }
-
+    .banner-text h4 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
     .banner-text p {
-        font-size: 16px;
+        font-size: 11px;
         font-family: 'barlowregular';
         padding-bottom: 10px;
     }
+    .banner-text .btn {
+        font-size: 12px;
+    }
 }
-
- 
