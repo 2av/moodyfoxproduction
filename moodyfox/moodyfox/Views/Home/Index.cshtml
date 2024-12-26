@@ -86,26 +86,26 @@
                     </div>
                 </div>
                 @*<div class="col wow animate__animated animate__zoomIn">
-                    <div class="services-card">
-                        <img src="Assets/img/Services-images/design.jpg" class="img-fluid card-img-top"
-                             alt="...">
-                        <a href="#">DESIGN SERVICES</a>
+                        <div class="services-card">
+                            <img src="Assets/img/Services-images/design.jpg" class="img-fluid card-img-top"
+                                 alt="...">
+                            <a href="#">DESIGN SERVICES</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col wow animate__animated animate__zoomIn">
-                    <div class="services-card">
-                        <img src="Assets/img/Services-images/website-development.jpg"
-                             class="img-fluid card-img-top" alt="...">
-                        <a href="#">WEBSITE DEVELOPMENT</a>
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="services-card">
+                            <img src="Assets/img/Services-images/website-development.jpg"
+                                 class="img-fluid card-img-top" alt="...">
+                            <a href="#">WEBSITE DEVELOPMENT</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col wow animate__animated animate__zoomIn">
-                    <div class="services-card">
-                        <img src="Assets/img/Services-images/digital marketing.jpg"
-                             class="img-fluid card-img-top" alt="...">
-                        <a href="#">DIGITAL MARKETING SERVICES</a>
-                    </div>
-                </div>*@
+                    <div class="col wow animate__animated animate__zoomIn">
+                        <div class="services-card">
+                            <img src="Assets/img/Services-images/digital marketing.jpg"
+                                 class="img-fluid card-img-top" alt="...">
+                            <a href="#">DIGITAL MARKETING SERVICES</a>
+                        </div>
+                    </div>*@
             </div>
         </div>
     </div>
@@ -279,7 +279,53 @@
             on -
             es without hesitat  don't let indecision hold you back!”
         </p>
-</div>
+    </div>
 </section>
 @Html.Partial("_ContactUs")
 
+
+<section class="faq">
+    <div class="container">
+        <div class="text-center">
+            <h3 class="heading">FREQUENTLY ASKED QUESTIONS (FAQ)</h3>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="benefitmybusinessOne">
+                    <h2 data-toggle="collapse" data-target="#benefitmybusiness" aria-expanded="true" aria-controls="benefitmybusiness" class="mb-0">
+                        How can animation benefit my business?
+                    </h2>
+                </div>
+                <div id="benefitmybusiness" class="collapse show" aria-labelledby="benefitmybusinessOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Animation can boost your business by increasing audience engagement, enhancing brand awareness, and driving higher conversion rates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What information do you need from me to start a project?
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Animation can boost your business by increasing audience engagement, enhancing brand awareness, and driving higher conversion rates.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What are your pricing models?
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

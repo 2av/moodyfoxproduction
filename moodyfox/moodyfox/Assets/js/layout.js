@@ -22,4 +22,11 @@ $(document).ready(function () {
         }
     });
 
+    $(".contactmenu").click(function () {
+        $('html, body').animate({
+            scrollTop: $(".contect-form").offset().top
+        }, 3000); 
+    });
+
+
 });
