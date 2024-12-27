@@ -195,11 +195,11 @@
                 <div class="about-left">
                     <div class="about-top">
                         <div>
-                            <h3 class="heading-top">18+ </h3>
+                            <h3 class="heading-top counters" akhi="18">0 </h3>
                             <p>years experience</p>
                         </div>
                         <div>
-                            <h3 class="heading-top">250+ </h3>
+                            <h3 class="heading-top counters" akhi="250">0 </h3>
                             <p>clients</p>
                         </div>
                     </div>
@@ -329,3 +329,28 @@
         </div>
     </div>
 </section>
+
+<script>
+    const counters = document.querySelectorAll('.counters');
+    const speed = 1000;
+
+    counters.forEach(counter => {
+        const animate = () => {
+            const value = +counter.getAttribute('akhi');
+            const data = +counter.innerText;
+
+            const time = value / speed;
+            if (data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            } else {
+                counter.innerText = value >= 1 ? `${value}+` : value; // Add "+" if value >= 1
+            }
+        };
+
+        animate();
+    });
+
+
+
+    </script>
