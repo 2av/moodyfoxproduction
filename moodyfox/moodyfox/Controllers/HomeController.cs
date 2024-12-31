@@ -30,59 +30,36 @@ namespace moodyfox.Controllers
             return View();
         }
 
-    //    [HttpPost]
-    //    public JsonResult SendEmail([FromBody] EnquiryFormViewModel model)
-    //    {
-    //        if (ModelState.IsValid)
-    //        {
-    //            try
-    //            {
-    //                // Compose the email
-    //                var fromAddress = new MailAddress("your-email@example.com", "Your Name");
-    //                var toAddress = new MailAddress("recipient-email@example.com");
-    //                const string fromPassword = "your-email-password";
-    //                string subject = "New Enquiry Form Submission";
-    //                string body = $@"
-    //            First Name: {model.FirstName}
-    //            Last Name: {model.LastName}
-    //            Email: {model.Email}
-    //            Contact: {model.Contact}
-    //            Reference Video: {model.ReferenceVideo}
-    //            Service Requirement: {model.ServiceRequirement}
-    //            Message: {model.Message}
-    //        ";
+        [HttpPost]
+        public JsonResult SendEmail(string toEmail, string subject, string body)
+        {
+            try
+            {
+                var smtpClient = new SmtpClient("smtp.your-email-provider.com")
+                {
+                    Port = 587, // Adjust as per your email provider
+                    Credentials = new NetworkCredential("your-email@example.com", "your-email-password"),
+                    EnableSsl = true,
+                };
 
-    //                var smtp = new SmtpClient
-    //                {
-    //                    Host = "smtp.gmail.com", // Update to your SMTP host
-    //                    Port = 587,
-    //                    EnableSsl = true,
-    //                    DeliveryMethod = SmtpDeliveryMethod.Network,
-    //                    UseDefaultCredentials = false,
-    //                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-    //                };
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("your-email@example.com"),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true,
+                };
+                mailMessage.To.Add(toEmail);
 
-    //                using (var message = new MailMessage(fromAddress, toAddress)
-    //                {
-    //                    Subject = subject,
-    //                    Body = body
-    //                })
-    //                {
-    //                    smtp.Send(message);
-    //                }
+                smtpClient.Send(mailMessage);
 
-    //                return Json(new { success = true, message = "Enquiry submitted successfully." });
-    //            }
-    //            catch (Exception ex)
-    //            {
-    //                return Json(new { success = false, message = ex.Message });
-    //            }
-    //        }
-    //        else
-    //        {
-    //            return Json(new { success = false, message = "Invalid form data." });
-    //        }
-    //    }
+                return Json(new { success = true, message = "Email sent successfully." });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
 
     }
 }

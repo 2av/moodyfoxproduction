@@ -6,7 +6,7 @@
             <div class="plant">
                 <img class="img-fluid wow animate__animated animate__zoomIn" src="~/Assets/img/plant.png">
             </div>
-            <form action="/Home/SendEmail" method="post" class="form-wrap wow animate__animated animate__zoomIn">
+            <form action="#" method="post" class="form-wrap wow animate__animated animate__zoomIn">
                 @Html.AntiForgeryToken()
                 <input type="hidden" name="__RequestVerificationToken" value="@ViewData["__RequestVerificationToken"]" />
 
@@ -64,21 +64,8 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <input type="submit" class="btn btn-primary" value="Submit" />
-                        @if (TempData["Success"] != null)
-                        {
-                            <div class="alert alert-success">
-                                @TempData["Success"]
-                            </div>
-                        }
-
-                        @if (TempData["Error"] != null)
-                        {
-                            <div class="alert alert-danger">
-                                @TempData["Error"]
-                            </div>
-                        }
-
+                        <button class="btn btn-primary" id="sendEmailButton">SUBMIT</button>
+                        <p id="result"></p>
                     </div>
                 </div>
             </form>
@@ -91,54 +78,27 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#enquiryForm').on('submit', function (e) {
-                e.preventDefault(); // Prevent default form submission
-
-                // Collect form data
-                var formData = {
-                    FirstName: $('#fname').val(),
-                    LastName: $('#Lname').val(),
-                    Email: $('#email').val(),
-                    Contact: $('#contact').val(),
-                    ReferenceVideo: $('#feference-video').val(),
-                    ServiceRequirement: $('#Service-Requirement').val(),
-                    Message: $('textarea').val()
+        $('#sendEmailButton').click(function () {
+                const emailData = {
+                    toEmail: $('#toEmail').val(),
+                    subject: $('#subject').val(),
+                    body: $('#body').val(),
                 };
 
-                // Send AJAX request
                 $.ajax({
-                    url: '/Home/SendEmail', // Update the URL to your controller action
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(formData),
+                    type: "POST",
+                    url: "/Home/SendEmail",
+                    data: emailData,
                     success: function (response) {
-                        alert('Enquiry submitted successfully!');
-                        // Optionally, clear the form
-                        $('#enquiryForm')[0].reset();
+                        if (response.success) {
+                            $('#result').text(response.message).css('color', 'green');
+                        } else {
+                            $('#result').text(response.message).css('color', 'red');
+                        }
                     },
-                    error: function (xhr, status, error) {
-                        alert('An error occurred: ' + xhr.responseText);
+                    error: function () {
+                        $('#result').text("An error occurred.").css('color', 'red');
                     }
                 });
-                var token = $('input[name="__RequestVerificationToken"]').val();
-
-                $.ajax({
-                    url: '/Home/SendEmail',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(formData),
-                    headers: {
-                        'RequestVerificationToken': token
-                    },
-                    success: function (response) {
-                        alert(response.message);
-                    },
-                    error: function (xhr, status, error) {
-                        alert('An error occurred: ' + xhr.responseText);
-                    }
-                });
-
             });
-        });
     </script>
