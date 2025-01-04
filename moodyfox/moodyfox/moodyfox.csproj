@@ -214,6 +214,8 @@
     <Content Include="Assets\img\Blog-Mail.png" />
     <Content Include="Assets\img\boy.png" />
     <Content Include="Assets\img\brand boost01.jpg" />
+    <Content Include="Assets\img\brand-4.jpg" />
+    <Content Include="Assets\img\brand-5.jpg" />
     <Content Include="Assets\img\brand-boost01 --0.jpg" />
     <Content Include="Assets\img\brand-boost01.jpeg" />
     <Content Include="Assets\img\brand-boost01.jpg" />
@@ -249,6 +251,7 @@
     <Content Include="Assets\img\close.png" />
     <Content Include="Assets\img\facebook_2504903.png" />
     <Content Include="Assets\img\form-bg.png" />
+    <Content Include="Assets\img\fox-1.png" />
     <Content Include="Assets\img\fox.png" />
     <Content Include="Assets\img\fox_08.png" />
     <Content Include="Assets\img\higher-conversion.jpg" />
@@ -261,6 +264,7 @@
     <Content Include="Assets\img\option icon.png" />
     <Content Include="Assets\img\plant.png" />
     <Content Include="Assets\img\play-btn.png" />
+    <Content Include="Assets\img\qute.png" />
     <Content Include="Assets\img\service-fox.jpg" />
     <Content Include="Assets\img\Services images1\3d animation 01.jpg" />
     <Content Include="Assets\img\Services images1\3d product.jpeg" />
