@@ -269,19 +269,15 @@ footer {
 }
 .footheading:after { position: absolute; content: ""; background: #fe9000; width: 90px; height: 2px; bottom: -10px; left: 0;}
 footer .foot-menu ul { padding-top: 20px;}
-footer .foot-menu li a {
-    color: #fff;
-    font-size: 18px;
-    font-family: 'barlowregular';
-}
+footer .foot-menu li a { color: #fff; font-size: 18px; font-family: 'barlowregular'; display:inline-flex; }
 
-footer .foot-menu li a img { width: 30px; padding: 0 5px;}
+footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
 .copy-right {
     text-align: right;
     font-size: 18px; line-height:25px;
     color: #b6b6b6;}
-.copy-right p { margin:0px; font-size:18px; text-transform:uppercase;}
-.copy-right p span { font-size:22px;}
+.copy-right p { margin:0px; font-size:12px; text-transform:uppercase;}
+.copy-right p span { font-size:18px;}
 /* service Page */
 
 .service-banner {
@@ -401,7 +397,13 @@ footer .foot-menu li a img { width: 30px; padding: 0 5px;}
         right: -3%;
         top: 3%;
     }
+#contectform .modal-content { position:relative;}
 
+#contectform .modal-body { background-color:#2f2f4c; color:#fdfdfd; text-align:center;}
+#contectform .modal-body .close { color:#fff; opacity:1;}
+#contectform .modal-body h5 { font-family:'barlowbold';}
+#contectform .modal-body p { font-family:'barlowlight';}
+#contectform .modal-body button { color:#161616; font-family:'barlowmedium';}
 .brand-text { background-color: #191927; padding:67px 0; color:#fff; font-size:32px; line-height:37px; text-align:center;}
 .brand-text p {}
 .brand-qute { font-size:80px; line-height:0px; margin:0px; padding-bottom:20px;}
