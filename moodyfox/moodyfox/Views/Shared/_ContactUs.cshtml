@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-primary" id="sendEmailButton">SUBMIT</button>
+                        <button class="btn btn-primary" id="sendEmailButton"  data-toggle="modal" data-target="#contectform">SUBMIT</button>
                         <p id="result"></p>
                     </div>
                 </div>
@@ -75,30 +75,53 @@
         </div>
     </div>
 </section>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contectform">
+    Launch demo modal
+</button>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $('#sendEmailButton').click(function () {
-                const emailData = {
-                    toEmail: $('#toEmail').val(),
-                    subject: $('#subject').val(),
-                    body: $('#body').val(),
-                };
+<div class="modal fade" id="contectform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="~/Assets/img/close-icon.png">
+                </span>
+                <img src="~/Assets/img/ThankYou-Mail.png">
+                <h5>THANK YOU</h5>
+                <p>
+                    Your submission has been received. We will <br>
+                    be in touch and contact you soon.
+                </p>
+                <button type="button" class="btn btn-primary">SUBMIT</button>
+            </div>
 
-                $.ajax({
-                    type: "POST",
-                    url: "/Home/SendEmail",
-                    data: emailData,
-                    success: function (response) {
-                        if (response.success) {
-                            $('#result').text(response.message).css('color', 'green');
-                        } else {
-                            $('#result').text(response.message).css('color', 'red');
-                        }
-                    },
-                    error: function () {
-                        $('#result').text("An error occurred.").css('color', 'red');
-                    }
-                });
-            });
-    </script>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('#sendEmailButton').click(function () {
+        const emailData = {
+            toEmail: $('#toEmail').val(),
+            subject: $('#subject').val(),
+            body: $('#body').val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Home/SendEmail",
+            data: emailData,
+            success: function (response) {
+                if (response.success) {
+                    $('#result').text(response.message).css('color', 'green');
+                } else {
+                    $('#result').text(response.message).css('color', 'red');
+                }
+            },
+            error: function () {
+                $('#result').text("An error occurred.").css('color', 'red');
+            }
+        });
+    });
+</script>
