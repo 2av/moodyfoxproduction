@@ -130,9 +130,12 @@
     .benefits-body {
         padding: 0;
     }
+    .services-animation-head p { padding:10px;}
 }
 
 @media only screen and (max-width: 768px) {
+    header .navbar-brand span big { font-size:18px; line-height:18px;}
+    header .navbar-brand span small  { font-size:13px; line-height:14px;}
     .brand-boost-wrap {
         flex-direction: column;
     }
@@ -160,8 +163,12 @@
     .banner-text .btn {
         line-height: normal;
         font-size: 18px;
-        padding: 5px;
+        padding: 8px; margin-left:30px; margin-top:0px;
     }
+    .banner-text p { padding-right:15px;}
+    .banner-text p br { display:none;}
+    .row-items-3 .col { padding:0 30px;}
+    .blue-box { height:200px;}
     .blue-box p big {
         font-size: 32px;
     }
@@ -211,6 +218,8 @@
         margin: 0;
         max-width: 100%;
     }
+    .client-head { padding:0px;}
+
     .about-us .heading {
         font-size: 33px;
         padding-bottom: 45px;
@@ -228,10 +237,10 @@
         font-size: 24px;
     }
     .about-us .about-left p {
-        font-size: 16px;
+        font-size: 14px; line-height:18px;
     }
     .btn-hide-desktop {
-        font-size: 22px;
+        font-size: 16px;
     }
     .heading {
         font-size: 33px
@@ -243,15 +252,18 @@
         flex-basis: calc( 100% / 3);
         max-width: calc( 100% / 3);
     }
+    .form-wrap .form-body .form-group { margin-bottom:21px;}
+    .form-wrap .form-body .form-control { height:39px;}
+
     .contect-form-wrap .enquiry-client {
-        right: -30%;
-        top: 20%;
+        right: -45%;
+        top: 28%;
     }
     .contect-form-wrap .enquiry-client img {
         width: 45%;
     }
     #fname, #Lname, #email, #contact, #feference-video, #Service-Requirement {
-        width: 70%;
+        width: 80%;
     }
     .contect-form-wrap .plant img {
         width: 45%;
@@ -296,10 +308,15 @@
     .services-head p {
         font-size: 14px;
     }
-    .brand-text { font-size:18px;}
+    .brand-text { font-size:19px; line-height:22px; padding:60px 30px;}
     .faq .card .card-header h2, .faq .card-body {
         padding: 10px 60px 10px 10px;
     }
+    .copy-right p { font-size:13px;}
+    .benefits-content { max-width:100%;}
+    .benefits-fox  { display:none;}
+
+    .benefits-body .benefits-point p { font-size:18px; line-height:normal;}
 }
 
 @media only screen and (max-width: 557px) {
