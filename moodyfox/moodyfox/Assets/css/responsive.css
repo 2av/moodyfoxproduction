@@ -85,7 +85,7 @@
         margin-bottom: 50px;
     }
     .clients { }
-    .contect-form {
+    .contect-form { background-image:none; background-color:#fff9f5;
         overflow: hidden;
         background-size: 50% auto;
     }
@@ -121,9 +121,23 @@
     .Animation-vedio-2d-foot {
         padding: 0px;
     }
+    .service-banner-wrap { padding:0 30px;}
     .service-banner {
         background-size: auto;
+        padding: 50px 0 65px 0; min-height:auto;
     }
+    .service-banner-left .Animation-2d h2 span { display:block;}
+    .service-banner-left .Animation-2d p { font-size:14px; margin:0 auto;}
+    .service-banner-text { padding: 0px;}
+    .service-banner-text p { font-size:14px; line-height:18px; padding:0 20px}
+    .service-banner .btn { margin: 0 auto; text-transform: uppercase; font-size: 15px; font-family: 'barlowsemibold'; display: block; }
+   .services.Animation-vedio-2d .services-animation-head .heading span { display:block;}
+    .services.Animation-vedio-2d .services-animation-head p span { display:block; }
+    .Animation-vedio-2d .row-items-3 .col  { margin:20px auto;}
+    .Animation-vedio-2d .btn-lg { font-size:18px;}
+    .Animation-vedio-2d-foot p { font-size:15px; line-height:20px; padding:0 40px;}
+    .Animation-vedio-2d-foot p br { display:none;}
+    
     .benefits {
         background-image: none;
     }
@@ -131,6 +145,9 @@
         padding: 0;
     }
     .services-animation-head p { padding:10px;}
+
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -140,6 +157,7 @@
         flex-direction: column;
     }
     .brand-boost-wrap .brand-boost-img {
+        padding-bottom:20px;
         order: 0;
         flex-basis: 100%;
         max-width: 100%;
@@ -252,12 +270,17 @@
         flex-basis: calc( 100% / 3);
         max-width: calc( 100% / 3);
     }
-    .form-wrap .form-body .form-group { margin-bottom:21px;}
+    .form-wrap .form-head .heading { font-size:33px;}
+    .form-wrap .form-head small { font-size:14px;}
+    .form-wrap .form-head small br  { display:none;}
+    .form-wrap .form-body .form-group { margin-bottom:20px;}
     .form-wrap .form-body .form-control { height:39px;}
-
+    .form-wrap .form-head h4 { font-size:18px; line-height:19px;}
+    .contect-form-wrap  { margin:0 -15px; }
+    .contect-form .form-wrap {border-radius:0px;}
     .contect-form-wrap .enquiry-client {
-        right: -45%;
-        top: 28%;
+        right: -40%;
+        top: 26%;
     }
     .contect-form-wrap .enquiry-client img {
         width: 45%;
@@ -271,6 +294,8 @@
     .contect-form-wrap .plant {
         left: 8%;
     }
+    .form-wrap .form-body .btn { font-size:15px; padding:6px 27px;}
+    .form-wrap .form-body { padding:0 20px;}
     .footheading {
         font-size: 22px;
     }
@@ -284,16 +309,11 @@
     .copy-right p {
         font-size: 16px;
     }
+
     .service-banner-wrap .service-banner-left .btn {
         display: none;
     }
-    .service-banner .btn {
-        margin: 0 auto;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-family: 'barlowsemibold';
-        display: block;
-    }
+    
     .service-banner-wrap {
         display: block;
         text-align: center;
@@ -302,21 +322,31 @@
         flex-basis: 100%;
         max-width: 100%;
     }
-    .service-banner-text {
-        padding: 20px;
+    .services-Video-boost.Video-boost h2 {
+        font-size: 25px;
     }
-    .services-head p {
-        font-size: 14px;
+    .services-Video-boost.Video-boost p { font-size:12px;}
+    .animation-story { margin-top:90px;}
+
+    .brand-boost-wrap .brand-boost-img .boost-heading { display:block; font-size:18px; margin-bottom:30px;}
+    .brand-boost-wrap .brand-boost-content .boost-heading { display:none;}
+    
+    .brand-boost-wrap .brand-boost-content p, .brand-boost-wrap .brand-boost-content ul li {
+        font-size: 15px;
+        line-height: 20px;
     }
+    .brand-boost .pinck-box { height:auto;}
     .brand-text { font-size:19px; line-height:22px; padding:60px 30px;}
-    .faq .card .card-header h2, .faq .card-body {
-        padding: 10px 60px 10px 10px;
-    }
+    .faq .card .card-header h2, .faq .card-body { padding: 10px 60px 10px 10px; }
     .copy-right p { font-size:13px;}
     .benefits-content { max-width:100%;}
     .benefits-fox  { display:none;}
-
-    .benefits-body .benefits-point p { font-size:18px; line-height:normal;}
+    .benefits .benefits-head  { margin:0 auto;}
+    .benefits .benefits-head h3 { font-size:16px; line-height:25px;;}
+    .benefits .benefits-head .heading { font-size:23px; line-height:30px; margin:0;}
+    .benefits-body .benefits-point { margin-bottom:30px;}
+    .benefits-body .benefits-point p { font-size:15px; line-height:20px;}
+    .benefits-body .benefits-content .benefits-point h4 { font-size:20px; line-height:24px; padding-bottom:12px;}
 }
 
 @media only screen and (max-width: 557px) {
