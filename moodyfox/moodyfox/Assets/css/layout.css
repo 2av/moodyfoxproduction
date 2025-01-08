@@ -310,19 +310,23 @@ footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
 .Animation-2d { align-content: center; color: #fff;margin-bottom: 20px; }
 .Animation-2d h2 { font-family: 'barlowsemibold'; font-size: 58px; }
 .Animation-2d .btn { font-family: 'barlowsemibold'; font-size: 24px; margin-left:15%; }
-.service-banner-text { padding:30px 100px 0 100px;}
-.service-banner-text p { color: #c9c9c9; font-size:20px; line-height:25px;}
+.service-banner-text { padding:25px 100px 0 100px;}
+.service-banner-text p { color: #c9c9c9; font-size:17px; line-height:25px;}
 .services-animation-head { text-align:center;}
 .services-animation-head p { padding:0 180px; font-size:16px; line-height:20px;}
 .Animation-vedio-2d .btn-lg { font-family: 'barlowsemibold'; }
 .Animation-vedio-2d-foot { padding: 40px 0px 0px 0px;}
 .Animation-vedio-2d-foot p { font-size:20px; line-height:25px;}
+.Animation-vedio-2d .row-items-3 .col { margin:25px auto; padding:0 12px;}
+.Animation-vedio-2d .row-items-3 .col .services-card { position:relative;}
+    .Animation-vedio-2d .row-items-3 .col .services-card:after { content: ""; background-image: url(../img/play-btn.png); background-size:contain; height: 50px; width: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 
 .brand-boost-wrap { display: flex; justify-content: space-around; align-items: center; padding: 40px 0;}
-.brand-boost-wrap .brand-boost-content { flex-basis: 60%; max-width: 60%;}
-.brand-boost-wrap .brand-boost-img { flex-basis: calc( 40% - 25px); max-width: calc( 40% - 25px); padding: 25px;}
-.brand-boost-wrap .brand-boost-content .boost-heading { color: #0c0c0c; text-align: center;font-family: 'barlowsemibold';display: block;margin: 10px auto;width: max-content;padding: 5px;border-radius: 6px;}
-.brand-boost-wrap .brand-boost-content p , .brand-boost-wrap .brand-boost-content ul li { color: #2c2c2c;}
+.brand-boost-wrap .brand-boost-content { flex-basis: 60%; max-width: 60%; padding:0 15px;}
+.brand-boost-wrap .brand-boost-img { flex-basis: calc( 40% - 25px); max-width: calc( 40% - 25px);}
+.brand-boost-wrap .brand-boost-img .boost-heading { display:none;}
+.brand-boost-wrap .boost-heading { font-size:33px; color: #0c0c0c; text-align: center;font-family: 'barlowbold';display: block;margin: 10px auto;width: max-content;padding: 5px;border-radius: 6px;}
+.brand-boost-wrap .brand-boost-content p , .brand-boost-wrap .brand-boost-content ul li { margin:0; font-size:20px; line-height:24px; color: #2c2c2c;}
 
 .story-video ,.demo-launch ,.how-video { background-color: #e8e8e8;}
 .rhymes-kids ,.promo-video , .education-video { background-color: #fdf8f4;}
@@ -337,9 +341,11 @@ footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
 .benefits { padding: 80px 0; height: 100%;width: 100%;color: #fff;background-position: right; background-color: #1a1929;}
 .benefits-head {  margin-bottom: 40px;} 
 .benefits-head::after { display: inline-block; content: ""; border-bottom: solid 2px #fff; height: 2px; width: 75%;}
-.benefits-body { }
+.benefits .benefits-head h3 { font-size:37px; line-height:50px;  margin:0; font-family:'barlowmedium';}
+.benefits .benefits-head .heading { font-size:41px; line-height:50px; margin:0;font-family:'barlowmedium';}
 .benefits-body .benefits-point { margin-bottom:40px;}
 .benefits-body .benefits-point p { margin:0; font-size:21px; line-height:30px;}
+.benefits-body .benefits-content .benefits-point h4  { font-size:29px; line-height:50px;font-family:'barlowmedium'; margin:0;}
 .benefits-wrap { display:flex; position:relative;}
 .benefits-fox  { position:absolute; top:-7%; right:-10%;}
 
@@ -347,7 +353,7 @@ footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
 .benefits-head .heading { font-family: 'barlowmedium';}
 
 .contect-form { background-image: url(../img/form-bg.png);background-color: #fff;padding: 80px 0;background-position: top center;background-size: 100% 100%;height: auto;background-repeat: no-repeat;}
-.contect-form .form-wrap { background: rgb(50 49 77 / 80%); margin: 40px auto; padding: 57px 0; border-radius: 16px; max-width: 650px; color: #fff; position: relative;}
+.contect-form .form-wrap { background: #32314df2; margin: 40px auto; padding: 57px 0; border-radius: 16px; max-width: 650px; color: #fff; position: relative;}
        /* .contect-form .form-wrap::after {
             content: "";
             background-image: url(../img/plant.png);
