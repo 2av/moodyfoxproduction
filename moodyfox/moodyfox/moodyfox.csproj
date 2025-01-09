@@ -248,8 +248,12 @@
     <Content Include="Assets\img\clients\unfoldu.png" />
     <Content Include="Assets\img\clients\usp.png" />
     <Content Include="Assets\img\clients\Yamaha-Motor-logo.png" />
+    <Content Include="Assets\img\close-icon.png" />
     <Content Include="Assets\img\close.png" />
     <Content Include="Assets\img\facebook_2504903.png" />
+    <Content Include="Assets\img\foot-call.png" />
+    <Content Include="Assets\img\foot-logo.png" />
+    <Content Include="Assets\img\foot-mail.png" />
     <Content Include="Assets\img\form-bg.png" />
     <Content Include="Assets\img\fox-1.png" />
     <Content Include="Assets\img\fox.png" />
@@ -315,6 +319,8 @@
     <Content Include="Assets\img\Services-images\07 E-Learning Service\Medical &amp; Healthcare training.png" />
     <Content Include="Assets\img\Services-images\07 E-Learning Service\Non Profit &amp; Advocasy.png" />
     <Content Include="Assets\img\Services-images\07 E-Learning Service\Profit &amp; Software training.png" />
+    <Content Include="Assets\img\Services-images\2D-animation-page-service\2D-Animation-fox.png" />
+    <Content Include="Assets\img\Services-images\2D-animation-page-service\2DAnimation.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\animation-stories.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\how-to-video.png" />
     <Content Include="Assets\img\Services-images\2D-animation-page-service\image01.jpg" />
@@ -325,6 +331,7 @@
     <Content Include="Assets\img\Services-images\2D-animation-page-service\training-and-education.png" />
     <Content Include="Assets\img\Services-images\3d animation 01.jpg" />
     <Content Include="Assets\img\Services-images\3d product.jpeg" />
+    <Content Include="Assets\img\Services-images\benefits_bg.jpg" />
     <Content Include="Assets\img\Services-images\design.jpg" />
     <Content Include="Assets\img\Services-images\digital marketing.jpg" />
     <Content Include="Assets\img\Services-images\E-Learning.jpg" />
@@ -332,6 +339,8 @@
     <Content Include="Assets\img\Services-images\motion graphic.jpg" />
     <Content Include="Assets\img\Services-images\portrait-man-cartoon-style.jpg" />
     <Content Include="Assets\img\Services-images\website-development.jpg" />
+    <Content Include="Assets\img\services-video.png" />
+    <Content Include="Assets\img\ThankYou-Mail.png" />
     <Content Include="Assets\img\video-bg.jpg" />
     <Content Include="Assets\img\youtube_2504965.png" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
