@@ -6,7 +6,7 @@
             <div class="plant">
                 <img class="img-fluid wow animate__animated animate__zoomIn" src="~/Assets/img/plant.png">
             </div>
-            <form action="#" method="post" class="form-wrap wow animate__animated animate__zoomIn">
+            <div action="#" method="post" class="form-wrap wow animate__animated animate__zoomIn">
                 @Html.AntiForgeryToken()
                 <input type="hidden" name="__RequestVerificationToken" value="@ViewData["__RequestVerificationToken"]" />
 
@@ -68,7 +68,7 @@
                         <p id="result"></p>
                     </div>
                 </div>
-            </form>
+            </div>
             <div class="enquiry-client">
                 <img class="img-fluid wow animate__animated animate__zoomIn" src="~/Assets/img/boy.png">
             </div>

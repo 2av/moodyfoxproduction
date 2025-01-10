@@ -8,13 +8,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../Assets/css/animate.min.css">
-    <link rel="stylesheet" href="../Assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../Assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Assets/css/owl.theme.default.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Assets/blog/css/layout.css">
-    <link rel="stylesheet" href="../Assets/blog/css/responsive.css">
+    <link rel="stylesheet" href="~/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/blog/css/layout.css">
+    <link rel="stylesheet" href="~/Assets/blog/css/responsive.css">
     <title>Moody Fox</title>
 </head>
 <body>
@@ -56,10 +56,10 @@
                                 </ul>
                             </li>
                             @*<li class="nav-item ">
-                                    <a class="nav-link" href="#">
-                                        OUR PROCESS
-                                    </a>
-                                </li>*@
+                                <a class="nav-link" href="#">
+                                    OUR PROCESS
+                                </a>
+                            </li>*@
                             <li class="nav-item">
                                 <a class="nav-link" href="/blog">Blog</a>
                             </li>
@@ -71,8 +71,84 @@
                 </nav>
             </div>
         </header>
+        <div class="blog-wrap">
+            <div class="container">
+                <h3 class="heading wow animate__animated animate__zoomIn"> BLOG ARTICLES </h3>
+                <div class="blog-seaction">
+                    <div class="blog-seaction-right">
+                        @RenderBody()                        
+                    </div>
+                    <div class="blog-seaction-left">
+                        <div class="blog-saidbar">
+                            <h4 class="saidbar-heading"> CATEGORIES</h4>
+                            <div class="card-wrap">
+                                <div class="cards left-img wow animate__animated animate__zoomIn">
+                                    <a href="">
+                                        <div class="cards-img">
+                                            <img class="img-fluid" src="~/Assets/img/Categories/01.png" alt="">
+                                        </div>
+                                        <div class="cards-text">
+                                            <p> AI IN ANIMATION & DESIGN</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards right-img wow animate__animated animate__zoomIn">
+                                    <a href="">
+                                        <div class="cards-text">
+                                            <p>  2D ANIMATION VIDEOS</p>
+                                        </div>
+                                        <div class="cards-img">
+                                            <img class="img-fluid" src="~/Assets/img/Categories/02.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards left-img wow animate__animated animate__zoomIn">
+                                    <a href="">
+                                        <div class="cards-img">
+                                            <img class="img-fluid" src="~/Assets/img/Categories/03.png" alt="">
+                                        </div>
+                                        <div class="cards-text">
+                                            <p>  3D ANIMATION VIDEOS</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
 
-        @RenderBody()
+                            <div class="social">
+                                <h4 class="saidbar-heading">FOLLOW US</h4>
+                                <ul class="social-icon">
+                                    <li class="wow animate__animated animate__zoomIn"><a href=""><img class="img-fluid" src="~/Assets/img/linkedin_2504923.png" alt="linkedin"></a></li>
+                                    <li class="wow animate__animated animate__zoomIn"><a href=""><img class="img-fluid" src="~/Assets/img/instagram_2504918.png" alt="instagram"></a></li>
+                                    <li class="wow animate__animated animate__zoomIn"><a href=""><img class="img-fluid" src="~/Assets/img/facebook_2504903.png" alt="facebook"></a></li>
+                                    <li class="wow animate__animated animate__zoomIn"><a href=""><img class="img-fluid" src="~/Assets/img/youtube_2504965.png" alt="youtube"></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="contect-us">
+                                <h4 class="saidbar-heading"> CONTACT US</h4>
+                                <p class="text-center wow animate__animated animate__zoomIn">
+                                    <a href="telto: +91-7304071081">
+                                        <img src="~/Assets/img/blog-call.png" alt="">
+                                    </a>
+                                    <span>+91-7304071081</span>
+                                </p>
+                                <p class="text-center wow animate__animated animate__zoomIn">
+                                    <a href="mailto:moodyfoxproductions@gmail.com">
+                                        <img src="~/Assets/img/Blog-Mail.png" alt="">
+                                    </a>
+                                    <span>moodyfoxproductions@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="or">
+                                <h5 class="or-heading"> OR</h5>
+                                <button class="btn btn-primary">SCHEDULE A CALL NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <footer>
             <div class="container">
                 <div class="row">

@@ -13,5 +13,9 @@ namespace moodyfox.Controllers
         {
             return View();
         }
+        public ActionResult details()
+        {
+            return View();
+        }
     }
 }
