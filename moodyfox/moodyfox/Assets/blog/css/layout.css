@@ -88,8 +88,7 @@ header .navbar-brand span small { font-size: 18px; font-weight: bold;}
 .navbar-light .navbar-nav .nav-link { color: #000; font-weight: bold; text-transform: uppercase; font-size: 18px; padding:8px 20px;}
 
 .blog-seaction { display:flex; margin:0 -15px;}
-.blog-seaction-right {
-    flex-basis:75%; padding:0 15px;
+.blog-seaction-right { flex-basis:75%; padding:0 15px;
 }
 .blog-seaction-left {
     flex-basis: 35%;
@@ -224,8 +223,14 @@ footer .foot-menu li a {
 
 
 
-
+.blog-card-section { margin-bottom:60px;}
 /* Inner */
-.blog-detail-main {}
-.detail-content .main-heading { font-size: 20px; font-weight: bold; border-bottom: solid 2px #0c0c0c; display: inline-block; margin-top: 30px; margin-bottom: 30px;}
-.detail-content .main-heading p { font-size: 14px; color: #0c0c0c;}
+
+.blog-seaction-right nav { border-top: solid 2px #939393; padding-top:30px;}
+.blog-seaction-right .pagination { justify-content:center;}
+.blog-seaction-right .pagination li a { border:none; background-color:transparent; }
+.detail-content .main-heading { font-size: 33px; font-family:'barlowbold'; border-bottom: solid 2px #0c0c0c; color:#050505; display: inline-block; margin: 30px auto; padding-bottom:25px;}
+.detail-content p { font-size: 16px;    font-family: 'barlowregular'; color: #363636;}
+
+.blog-detail-sub  { margin-top:40px;}
+.blog-detail-sub .blog-detail-se .sub-heading { font-size:25px; color:#050505; font-family:'barlowbold';}
