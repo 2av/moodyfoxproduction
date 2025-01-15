@@ -297,6 +297,7 @@ footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
     background-size: 100% 100%;
     padding: 120px 0 80px 0;
 }
+.service-banner .embed-responsive-item { border-radius:12px;}
 .service-banner-wrap { display:flex; align-items:center;}
 .service-banner-left { max-width:40%;}
 .service-banner-right { max-width:60%; }
@@ -327,7 +328,7 @@ footer .foot-menu li a img { width: 35px; height:25px; padding: 0 5px;}
 .Animation-vedio-2d-foot p { font-size:20px; line-height:25px;}
 .Animation-vedio-2d .row-items-3 .col { margin:25px auto; padding:0 12px;}
 .Animation-vedio-2d .row-items-3 .col .services-card { position:relative;}
-    .Animation-vedio-2d .row-items-3 .col .services-card:after { content: ""; background-image: url(../img/play-btn.png); background-size:contain; height: 50px; width: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+    /*.Animation-vedio-2d .row-items-3 .col .services-card:after { content: ""; background-image: url(../img/play-btn.png); background-size:contain; height: 50px; width: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }*/
 
 .brand-boost-wrap { display: flex; justify-content: space-around; align-items: center; padding: 40px 0;}
 .brand-boost-wrap .brand-boost-content { flex-basis: 60%; max-width: 60%; padding:0 15px;}
