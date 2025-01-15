@@ -339,6 +339,11 @@
     <Content Include="Assets\img\Services-images\Explainer Video.jpg" />
     <Content Include="Assets\img\Services-images\motion graphic.jpg" />
     <Content Include="Assets\img\Services-images\portrait-man-cartoon-style.jpg" />
+    <Content Include="Assets\img\Services-images\services-1.png" />
+    <Content Include="Assets\img\Services-images\services-2.png" />
+    <Content Include="Assets\img\Services-images\services-5.png" />
+    <Content Include="Assets\img\Services-images\services-6.png" />
+    <Content Include="Assets\img\Services-images\services-8.png" />
     <Content Include="Assets\img\Services-images\website-development.jpg" />
     <Content Include="Assets\img\services-video.png" />
     <Content Include="Assets\img\ThankYou-Mail.png" />
