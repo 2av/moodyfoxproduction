@@ -31,35 +31,56 @@ namespace moodyfox.Controllers
         }
 
         [HttpPost]
-        public JsonResult SendEmail(string toEmail, string subject, string body)
+        public JsonResult SendEmail(string toEmail)
         {
             try
             {
-                var smtpClient = new SmtpClient("smtp.your-email-provider.com")
+                // Sender and recipient email addresses
+                string senderEmail = "support@moodyfoxproductions.com";
+                string recipientEmail = "akhilesh.vis17@gmail.com";
+
+                // Email subject and body
+                string subject = "Test Email";
+                string body = "This is a test email sent from ASP.NET MVC.";
+                System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+
+                // SMTP client setup
+                using (SmtpClient smtp = new SmtpClient("moodyfoxproductions.com", 587))
                 {
-                    Port = 587, // Adjust as per your email provider
-                    Credentials = new NetworkCredential("your-email@example.com", "your-email-password"),
-                    EnableSsl = true,
-                };
+                    smtp.Credentials = new NetworkCredential("support@moodyfoxproductions.com", "c6BYAzVwBsiDuHB"); // Replace with your email password
+                    smtp.EnableSsl = true; // Enable SSL/TLS
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Timeout = 15000; // Set a timeout for debugging
+                    // Create and configure the email message
+                    using (MailMessage mail = new MailMessage())
+                    {
+                        mail.From = new MailAddress(senderEmail);
+                        mail.To.Add(new MailAddress(recipientEmail));
+                        mail.Subject = subject;
+                        mail.Body = body;
+                        mail.IsBodyHtml = false; // Set to true if the email body contains HTML
 
-                var mailMessage = new MailMessage
-                {
-                    From = new MailAddress("your-email@example.com"),
-                    Subject = subject,
-                    Body = body,
-                    IsBodyHtml = true,
-                };
-                mailMessage.To.Add(toEmail);
+                        // Send the email
+                        smtp.Send(mail);
+                    }
+                }
 
-                smtpClient.Send(mailMessage);
-
-                return Json(new { success = true, message = "Email sent successfully." });
+                return Json("Email sent successfully.");
+            }
+            catch (SmtpException smtpEx)
+            {
+                // Log specific SMTP exceptions
+                return Json($"SMTP Error: {smtpEx.Message}. Inner Exception: {smtpEx.InnerException?.Message}");
             }
             catch (Exception ex)
             {
-                return Json(new { success = false, message = ex.Message });
+                // Log generic exceptions
+                return Json($"Error: {ex.Message}. Inner Exception: {ex.InnerException?.Message}");
             }
         }
-
     }
+
 }
+

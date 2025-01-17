@@ -351,6 +351,7 @@
     <Content Include="Assets\img\youtube_2504965.png" />
     <Content Include="Assets\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\form-validation.js" />
     <Content Include="Assets\js\jquery.slim.min.js" />
     <Content Include="Assets\js\layout.js" />
     <Content Include="Assets\js\owl.carousel.js" />
