@@ -326,6 +326,9 @@
         font-size: 25px;
     }
     .services-Video-boost.Video-boost p { font-size:12px;}
+    .services-card .div-iframe {
+        width: 100%;
+    }
     .animation-story { margin-top:90px;}
 
     .brand-boost-wrap .brand-boost-img .boost-heading { display:block; font-size:18px; margin-bottom:30px;}
