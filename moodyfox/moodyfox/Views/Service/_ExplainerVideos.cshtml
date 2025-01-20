@@ -3,6 +3,7 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="service-banner">
     <div class="container">
         <div class="row">
@@ -10,7 +11,7 @@
                 <div class="service-banner-wrap">
                     <div class="service-banner-left">
                         <div class="Animation-2d">
-                            <h2 class="wow animate__animated animate__zoomIn"> Explainer Videos</h2>
+                            <h2 class="wow animate__animated animate__zoomIn"> Explainer <span>Videos</span></h2>
                             <p class="wow animate__animated animate__zoomIn">
                                 Clear | Concise | Compelling
                             </p>
@@ -20,13 +21,15 @@
                         </div>
 
                     </div>
-                    <div class="service-banner-right">
-                        <div class="embed-responsive embed-responsive-21by9 wow animate__animated animate__zoomIn">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EYRhHb_tDS8?si=DUbjdMwMc9JEyep_"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                    <!--<div class="service-banner-right service-video">-->
+                    @*<img class="img-fluid" src="~/Assets/img/services-video.png" />*@
+                    @*<div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rSXRBA4Npyw?si=d6hh9LORvZbU-clC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>*@
+                    <!--</div>-->
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UKuHk9H2Luk?si=LP7EUiNW0wDjjTuB" allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -41,77 +44,127 @@
     </div>
 </div>
 
-
-
 <section class="services Animation-vedio-2d">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-12">
-                <h4 class="heading text-center wow animate__animated animate__fadeInUp">
-                    EXPLAINER VIDEOS
-                </h4>
-                <p class="wow animate__animated animate__fadeInUp">
-                    Explore our portfolio of engaging Explainer Videos! Check out our showcase to see how we bring ideas to life.
-                </p>
-            </div>
+        <div class="services-animation-head">
+            <h4 class="heading text-center wow animate__animated animate__fadeInUp">
+                EXPLAINER <span>VIDEOS</span>
+            </h4>
+            <p class="wow animate__animated animate__fadeInUp">
+                Explore our portfolio of engaging Explainer Videos! Check out our showcase to see how we bring ideas to life.
+            </p>
         </div>
         <div class="d-flex flex-wrap row-items-3">
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/portrait-man-cartoon-style.jpg"
-                         class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/portrait-man-cartoon-style.jpg"
+                        class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" style="border: none;"
+                                src="https://www.youtube.com/embed/DHHnyKjYDEE?si=jPgVRV7mZqND5W-u" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/e2okggTEsDM?si=fYS3NFMx6Jq83cQb" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/xRnvfKB3rQQ?si=C3u1Ilyzt7fOeFf4" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/y58ZOh0OMqw?si=iTkT7benw15Qln1-" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/gyNubtbxPdQ?si=iN8FZXvtEBwjUb4d" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/dQ-CWK2tJJo?si=142ElZmcfvCo89Pv" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/TlQ23RUiVrE?si=OiabUaorL0FN_78x" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/yaMx5ccnnu8?si=QBnTxaQYnz15VHox" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/j4sqCj-MmWM?si=han1sV7fxTU84IbD" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="text-center Animation-vedio-2d-foot  wow animate__animated animate__fadeInUp">
-            <button class="btn btn-lg btn-primary"> Explore more Explainer videos</button>
+            <a href="https://www.youtube.com/playlist?list=PLgJIOcJ0KegyMsgsJMW-fjpgQjNgg2bTm" target="_blank" class="btn btn-lg btn-primary"> Explore more 3D product videos </a>
             <p>
                 Click on the above button. Fill your requirements and explore more such Explainer video animations right for your business growth.
             </p>
@@ -120,13 +173,13 @@
     </div>
 </section>
 
-<section class="Video-boost wow animate__animated animate__bounceIn">
+<section class="services-Video-boost  Video-boost wow animate__animated animate__bounceIn">
     <div class="container">
         <div class="text-center">
             <h2>
                 <strong> USE CASE OF <span class="text-primary">EXPLAINER VIDEOS</span> FOR BUSINESSES?</strong>
             </h2>
-            <p>PRODUCT DEMONSTRATIONS | ONBOARDING | BRAND STORYTELLING | MARKETING & PROMOTIONS | SERVICE EXPLANATION | EVENT PROMOTION</p>
+            <p> PRODUCT DEMONSTRATIONS | ONBOARDING | BRAND STORYTELLING | MARKETING & PROMOTIONS | SERVICE EXPLANATION | EVENT PROMOTION</p>
         </div>
     </div>
 </section>
@@ -137,15 +190,21 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-img  wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/Product demonstration.png" />
+                    <h4 class="boost-heading" style="background-color: #ff585d;">Product Demonstration</h4>
+                   
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/Product demonstration.png" />
                 </div>
                 <div class="brand-boost-content  wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Product Demonstration</h4>
-                    <p>Explainer videos can effectively showcase how a product works, emphasizing its features and benefits.</p>
-                    <p>By visually demonstrating the product in action, companies can engage potential customers, helping them understand its practical applications and advantages.</p>
+                    <h4 class="boost-heading" style="background-color: #ff585d;"> Product Demonstration</h4>
+                    <p>
+                        Explainer videos can effectively showcase how a product works, emphasizing its features and benefits.
+                    </p>
+                    <br>
+                    <p>
+                        By visually demonstrating the product in action, companies can engage potential customers, helping them understand its practical applications and advantages.
+                    </p>
+                    <br />
                     <p>This can significantly enhance purchase confidence, as viewers can see the product's value firsthand.</p>
-
                 </div>
             </div>
         </div>
@@ -154,14 +213,17 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-content  wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Onboarding</h4>
-                    <p>For platforms or services, explainer videos serve as an effective onboarding tool for new users.  </p>
-                    <p>They can guide users through the key functionalities of the platform, making it easier for them to navigate and utilize the service efficiently.  </p>
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> Onboarding</h4>
+                    <p>For platforms or services, explainer videos serve as an effective onboarding tool for new users. </p>
+                    <br />
+                    <p>They can guide users through the key functionalities of the platform, making it easier for them to navigate and utilize the service efficiently. </p>
+                    <br />
                     <p>This streamlined introduction reduces the learning curve, ensuring that users feel comfortable and confident as they begin using the platform.</p>
                 </div>
                 <div class="brand-boost-img  wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/Onboarding.png" />
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> Onboarding</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/Onboarding.png" />
                 </div>
             </div>
         </div>
@@ -171,17 +233,62 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/Brand storytelling.png" />
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Brand Storytelling</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/Brand storytelling.png" />
                 </div>
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Brand Storytelling</h4>
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Brand Storytelling</h4>
+                    <p>Explainer videos can communicate a company’s mission, values, and history in an engaging manner. </p>
+                    <br />
+                    <p>By sharing the brand's story, companies can create an emotional connection with their audience, fostering loyalty and trust.</p>
+                    <br />
+                    <p>This approach humanizes the brand and allows potential customers to relate to the company's vision and ethos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-video">
+        <div class="container">
+            <div class="brand-boost-wrap">
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Marketing & Promotion</h4>
                     <p>
-                        Explainer videos can communicate a company’s mission, values, and history in an engaging manner.
+                        Explainer videos are an excellent tool for marketing and promotional efforts.
                     </p>
-                    <p>By sharing the brand's story, companies can create an emotional connection with their audience, fostering loyalty and trust.  </p>
+                    <br>
                     <p>
-                        This approach humanizes the brand and allows potential customers to relate to the company's vision and ethos.
+                        They can drive interest in new products, services, or campaigns by using captivating visuals and storytelling techniques.
+                    </p>
+                    <br />
+                    <p>This format not only captures attention but also makes the messaging memorable, increasing the likelihood of conversions and customer engagement.</p>
+
+                </div>
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Marketing & Promotion</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/marketing & promotion.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-video">
+        <div class="container">
+            <div class="brand-boost-wrap">
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Service Explanation</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/service explaination.png" />
+                </div>
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Service Explanation</h4>
+                    <p>
+                        For businesses that offer complex services, explainer videos can clarify these processes in a straightforward manner
+                        By breaking down intricate concepts into digestible content, companies can ensure that potential clients fully understand what is being offered.
+                    </p>
+                    <br>
+                    <p>
+                        This clarity helps eliminate confusion and builds trust with prospective customers.
                     </p>
 
                 </div>
@@ -192,111 +299,68 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">Marketing & Promotion</h4>
-                    <p>
-                        Explainer videos are an excellent tool for marketing and promotional efforts.
-                    </p>
-                    <p>
-                        They can drive interest in new products, services, or campaigns by using captivating visuals and storytelling techniques.
-                    </p>
-                    <p>
-                        This format not only captures attention but also makes the messaging memorable, increasing the likelihood of conversions and customer engagement.
-                    </p>
-                </div>
-                <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/marketing & promotion.png" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="how-video">
-        <div class="container">
-            <div class="brand-boost-wrap">
-                <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/service explaination.png" />
-                </div>
-                <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">  Service Explanation</h4>
-                    <p>
-                        For businesses that offer complex services, explainer videos can clarify these processes in a straightforward manner.
-                    </p>
-                    <p>
-                        By breaking down intricate concepts into digestible content, companies can ensure that potential clients fully understand what is being offered.
-
-                    </p>
-                    <p>
-                        This clarity helps eliminate confusion and builds trust with prospective customers.
-                    </p>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="education-video">
-        <div class="container">
-            <div class="brand-boost-wrap">
-                <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">  Event Promotion</h4>
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Event Promotion</h4>
                     <p>
                         Explainer videos can generate excitement and convey essential information about upcoming events, webinars, or conferences.
                     </p>
+                    <br>
                     <p>
                         By highlighting key speakers, topics, and benefits of attending, these videos can boost attendance and engagement.
                     </p>
-                    <p>
-                        They create anticipation and provide a visual representation of what attendees can expect.
-                    </p>
+                    <br />
+                    <p>They create anticipation and provide a visual representation of what attendees can expect.</p>
+
                 </div>
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/Event Promotion.png" />
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Event Promotion</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/05 Explainer Video service/Event Promotion.png" />
                 </div>
             </div>
         </div>
     </div>
+
+
 </section>
 
 <section class="benefits">
     <div class="container">
         <div class="benefits-head text-center wow animate__animated animate__zoomIn">
-            <h3> Here are some statistics that demonstrate the</h3>
-            <h2><span class="text-primary">Benefits of EXPLAINER VIDEO Animation for businesses:</span></h2>
+            <h3> Here are some statistics that demonstrate the </h3>
+            <h2 class="heading"><span class="text-primary">Benefits of EXPLAINER VIDEO Animation for businesses:</span></h2>
         </div>
         <div class="benefits-body">
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary">Retention Rate:</span></h4>
-                <p> Viewers retain 95% of a message when they watch it in a video, compared to 10% when reading text.</p>
+            <div class="d-lg-none d-md-block text-center">
+                <img class="img-fluid" src="~/Assets/img/service-fox.jpg">
             </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> Engagement:</span></h4>
-                <p> 80% of consumers remember a video they watched in the past month..</p>
+            <div class="benefits-wrap">
+                <div class="benefits-content">
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Retention Rate:</span></h4>
+                        <p> Viewers retain 95% of a message when they watch it in a video, compared to 10% when reading text.</p>
 
-            </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> Conversion Rates:</span></h4>
-                <p> Including a video on a landing page can increase conversions by up to 80%.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Higher Conversion Rates:</span></h4>
+                        <p>80% of consumers remember a video they watched in the past month.</p>
 
-            </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> User Preference:</span></h4>
-                <p>
-                    72% of customers prefer learning about a product or service through video.
-                </p>
-
-
-            </div>
-
-
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> SEO Benefits:</span></h4>
-                <p>
-                    Websites with video content are 53 times more likely to rank on the first page of Google search results.
-                </p>
-
-
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary"> Conversion Rates:</span></h4>
+                        <p> Including a video on a landing page can increase conversions by up to 80%.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">User Preference:</span></h4>
+                        <p>72% of customers prefer learning about a product or service through video.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">SEO Benefits:</span></h4>
+                        <p> Websites with video content are 53 times more likely to rank on the first page of Google search results.</p>
+                    </div>
+                </div>
+                <div class="benefits-fox wow animate__animated animate__zoomIn d-lg-block d-md-none d-sm-none">
+                    <img class="img-fluid" src="~/Assets/img/Services-images/2D-animation-page-service/2D-Animation-fox.png" />
+                </div>
             </div>
         </div>
     </div>

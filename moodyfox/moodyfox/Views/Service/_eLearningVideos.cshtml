@@ -3,6 +3,7 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="service-banner">
     <div class="container">
         <div class="row">
@@ -12,7 +13,7 @@
                         <div class="Animation-2d">
                             <h2 class="wow animate__animated animate__zoomIn">
                                 E-Learning
-                                Videos
+                                <span>Videos</span>
                             </h2>
                             <p class="wow animate__animated animate__zoomIn">
                                 Informative | Interactive | Accessible
@@ -23,13 +24,15 @@
                         </div>
 
                     </div>
-                    <div class="service-banner-right">
-                        <div class="embed-responsive embed-responsive-21by9 wow animate__animated animate__zoomIn">
-                            <iframe width="560" height="315"  src="https://www.youtube.com/embed/2EVitNRFneU?si=lKtVhhAm780u0Jcz"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                    <!--<div class="service-banner-right service-video">-->
+                    @*<img class="img-fluid" src="~/Assets/img/services-video.png" />*@
+                    @*<div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rSXRBA4Npyw?si=d6hh9LORvZbU-clC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>*@
+                    <!--</div>-->
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UKuHk9H2Luk?si=LP7EUiNW0wDjjTuB" allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -44,78 +47,127 @@
     </div>
 </div>
 
-
-
 <section class="services Animation-vedio-2d">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-12">
-                <h4 class="heading text-center wow animate__animated animate__fadeInUp">
-                    E-LEARNING VIDEOS
-                </h4>
-                <p class="wow animate__animated animate__fadeInUp">
-            Explore our portfolio of engaging E-learning videos designed to simplify complex concepts, enhance retention, and make learning interactive and fun! </p>
-
-                
-            </div>
+        <div class="services-animation-head">
+            <h4 class="heading text-center wow animate__animated animate__fadeInUp">
+                E-LEARNING <span>VIDEOS</span>
+            </h4>
+            <p class="wow animate__animated animate__fadeInUp">
+                Explore our portfolio of engaging E-learning videos designed to simplify complex concepts, enhance retention, and make learning interactive and fun!
+            </p>
         </div>
         <div class="d-flex flex-wrap row-items-3">
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/portrait-man-cartoon-style.jpg"
-                         class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/portrait-man-cartoon-style.jpg"
+                        class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" style="border: none;"
+                                src="https://www.youtube.com/embed/P-hT8Kj1jG8?si=Zrm0D0RqXiTKKEQu" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/SZQKMfT3IyQ?si=E1BTBI4ucCHSO-U3" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/y58ZOh0OMqw?si=wlUpfhGDG0OWeZYF" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/xRnvfKB3rQQ?si=O0pJv5d_u32hbG2Z" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/e2okggTEsDM?si=AEssGA92YaAqjg0_" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/wSV--Ynw2Wg?si=7j7GuvtpkYfa9Xxb" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/gyNubtbxPdQ?si=DfV8WPoXbUfT_65f" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/XT-xjtusWu4?si=-En4J9UNk0aXYS1_" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="../Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/aH2AOjikRDM?si=R8USIRBCoPhoSv3_" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="text-center Animation-vedio-2d-foot  wow animate__animated animate__fadeInUp">
-            <button class="btn btn-lg btn-primary"> Explore more E-Learning videos</button>
+            <a href="https://www.youtube.com/playlist?list=PLgJIOcJ0KegzZ88KvwX-9F4oqyLsNlKPl" target="_blank" class="btn btn-lg btn-primary"> Explore more E-Learning videos</a>
             <p>
                 Click on the above button. Fill your requirements and explore more such E-Learning video animations right for your business growth.
             </p>
@@ -124,13 +176,13 @@
     </div>
 </section>
 
-<section class="Video-boost wow animate__animated animate__bounceIn">
+<section class="services-Video-boost  Video-boost wow animate__animated animate__bounceIn">
     <div class="container">
         <div class="text-center">
             <h2>
-                <strong> USE CASE OF <span class="text-primary">E-LEARNING VIDEOS</span> FOR BUSINESSES?</strong>
+                <strong> USE CASE OF <span class="text-primary">E-LEARNING VIDEOS </span> FOR BUSINESSES?</strong>
             </h2>
-            <p>Educational Institutions | Corporate Training | Medical & Healthcare Training | Product or Software Training | Compliance Training | Nonprofit & Advocacy Campaigns</p>
+            <p> Educational Institutions | Corporate Training | Medical & Healthcare Training | Product or Software Training | Compliance Training | Nonprofit & Advocacy Campaigns</p>
         </div>
     </div>
 </section>
@@ -141,15 +193,19 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-img  wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/07 E-Learning Service/Educational Institutions.png" />
+                    <h4 class="boost-heading" style="background-color: #ff585d;">Educational Institutions</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Educational Institutions.png" />
                 </div>
                 <div class="brand-boost-content  wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Educational Institutions</h4>
-                    <p>Classroom Support: Visual aids for teachers to explain difficult concepts in subjects like science, math, or history.</p>
-                    <p>Distance Learning: Engages students in remote or online learning environments, making lessons more interactive and enjoyable..</p>
-                    
-
+                    <h4 class="boost-heading" style="background-color: #ff585d;"> Educational Institutions</h4>
+                    <p>
+                        Classroom Support: Visual aids for teachers to explain difficult concepts in subjects like science, math, or history.
+                    </p>
+                    <br>
+                    <p>
+                        Distance Learning: Engages students in remote or online learning environments, making lessons more interactive and enjoyable.
+                    </p>
                 </div>
             </div>
         </div>
@@ -158,14 +214,15 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-content  wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">Corporate Training</h4>
-                    <p>Onboarding Programs: Simplifies complex information for new employees, helping them understand company policies, culture, and job responsibilities in an engaging format. </p>
-                    <p>Skill Development: Animated tutorials and simulations for soft skills (e.g., communication) or technical skills (e.g., software training).  </p>
-                    
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> Corporate Training</h4>
+                    <p>Onboarding Programs: Simplifies complex information for new employees, helping them understand company policies, culture, and job responsibilities in an engaging format.</p>
+                    <br />
+                    <p>Skill Development: Animated tutorials and simulations for soft skills (e.g., communication) or technical skills (e.g., software training).</p>
                 </div>
                 <div class="brand-boost-img  wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/07 E-Learning Service/Corporate Training.png" />
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> Corporate Training</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Corporate Training.png" />
                 </div>
             </div>
         </div>
@@ -175,19 +232,16 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/07 E-Learning Service/Medical & Healthcare training.png" />
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Medical & Healthcare Training</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Medical & Healthcare training.png" />
                 </div>
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Medical & Healthcare Training</h4>
-                    <p>
-                        Medical Procedures: Detailed 3D animations illustrating surgical techniques or the human body's anatomy.
-                    </p>
-                    
-                    <p>
-                        Health Education: Educating patients on treatments, procedures, or healthy habits in a visually appealing, easy-to-understand format.
-                    </p>
-
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Medical & Healthcare Training</h4>
+                    <p>Medical Procedures: Detailed 3D animations illustrating surgical techniques or the human body's anatomy.</p>
+                    <br />
+                    <p>Health Education: Educating patients on treatments, procedures, or healthy habits in a visually appealing, easy-to-understand format.</p>
+                   
                 </div>
             </div>
         </div>
@@ -196,17 +250,20 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">Product or Software Training</h4>
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Product or Software Training</h4>
                     <p>
                         Product Demos: Animated videos demonstrating how to use complex products, tools, or software, helping both employees and customers.
                     </p>
+                    <br>
                     <p>
                         Software Tutorials: Step-by-step walkthroughs of software functions and features, ideal for tech and SaaS companies.
                     </p>
-                                   </div>
+                    
+                </div>
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                        src="~/Assets/img/Services-images/07 E-Learning Service/Profit & Software training.png" />
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Product or Software Training</h4>
+                   
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Profit & Software training.png" />
                 </div>
             </div>
         </div>
@@ -215,89 +272,96 @@
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/05 Explainer Video service/service explaination.png" />
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Compliance Training</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Compliance Training.png" />
                 </div>
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading"> Compliance Training</h4>
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Compliance Training</h4>
                     <p>
                         Safety Procedures: Engaging videos for workplace safety, fire drills, and emergency protocols.
                     </p>
+                    <br>
                     <p>
                         Regulatory Compliance: Clear explanations of legal, ethical, and regulatory guidelines in industries like finance, healthcare, and manufacturing.
-
                     </p>
-                   
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="education-video">
+    <div class="promo-video">
         <div class="container">
             <div class="brand-boost-wrap">
                 <div class="brand-boost-content wow animate__animated animate__zoomIn">
-                    <h4 class="boost-heading">
-                        Nonprofit & Advocacy Campaigns
-                    </h4>
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Nonprofit & Advocacy Campaigns</h4>
                     <p>
                         Awareness Programs: Educational animations to raise awareness about important causes, such as environmental issues, public health, or social justice.
                     </p>
+                    <br>
                     <p>
                         Donor Education: Explaining the impact of donations and how funds are used through compelling animated stories.
                     </p>
-                    </div>
+                </div>
                 <div class="brand-boost-img wow animate__animated animate__zoomIn">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/07 E-Learning Service/Non Profit & Advocasy.png" />
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Nonprofit & Advocacy Campaigns</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/07 E-Learning Service/Non Profit & Advocasy.png" />
                 </div>
             </div>
         </div>
     </div>
+    
+
 </section>
 
 <section class="benefits">
     <div class="container">
         <div class="benefits-head text-center wow animate__animated animate__zoomIn">
             <h3> Here are some statistics that demonstrate the </h3>
-            <h2><span class="text-primary">Benefits of E-LEARNING VIDEOS for businesses:</span></h2>
+            <h2 class="heading"><span class="text-primary">Benefits of  E-LEARNING VIDEOS Animation for businesses:</span></h2>
         </div>
         <div class="benefits-body">
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary">Retention & ENGAGEMENT::</span></h4>
-                <p>
-                    E-learning boosts retention rates by 25-60% compared to traditional classroom methods.
-                    Interactive, multimedia-rich content improves knowledge retention by up to 60%
-                </p>
+            <div class="d-lg-none d-md-block text-center">
+                <img class="img-fluid" src="~/Assets/img/service-fox.jpg">
             </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary">Saves Time and Increases Flexibility:</span></h4>
-                <p>
-                    E-learning courses take 40-60% less time to complete than in-person training.
-                    67% of companies now offer mobile learning for on-the-go access.
-                </p>
+            <div class="benefits-wrap">
+                <div class="benefits-content">
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Retention & ENGAGEMENT: </span></h4>
+                        <p>
+                            E-learning boosts retention rates by 25-60% compared to traditional classroom methods.
+                            Interactive, multimedia-rich content improves knowledge retention by up to 60%
+                        </p>
 
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Saves Time and Increases Flexibility:</span></h4>
+                        <p>
+                            E-learning courses take 40-60% less time to complete than in-person training.
+                            67% of companies now offer mobile learning for on-the-go access.
+                        </p>
+
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary"> Boosts Productivity and Performance:</span></h4>
+                        <p>
+                            E-learning increases productivity by 43% due to flexible, anytime access to learning materials.
+                            Companies investing in e-learning for employee development see a 42% increase in revenue.
+                        </p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Cost-Effective and High ROI:</span></h4>
+                        <p>
+                            For every $1 invested in e-learning, companies can see $30 in productivity gains.
+                            85% of students and employees prefer self-paced e-learning for better control over their learning.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="benefits-fox wow animate__animated animate__zoomIn d-lg-block d-md-none d-sm-none">
+                    <img class="img-fluid" src="~/Assets/img/Services-images/2D-animation-page-service/2D-Animation-fox.png" />
+                </div>
             </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> Boosts Productivity and Performance:</span></h4>
-                <p>
-                    E-learning increases productivity by 43% due to flexible, anytime access to learning materials.
-                    Companies investing in e-learning for employee development see a 42% increase in revenue.
-                </p>
-
-            </div>
-            <div class="benefits-point wow animate__animated animate__zoomIn">
-                <h4> <span class="text-primary"> Cost-Effective and High ROI:</span></h4>
-                <p>
-                    For every $1 invested in e-learning, companies can see $30 in productivity gains.
-                    85% of students and employees prefer self-paced e-learning for better control over their learning.
-                </p>
-
-
-            </div>
-
-
-           
         </div>
     </div>
 </section>

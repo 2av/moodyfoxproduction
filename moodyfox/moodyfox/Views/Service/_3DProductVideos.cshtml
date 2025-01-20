@@ -1,8 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "_3DProductVideos" + "";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="service-banner">
     <div class="container">
         <div class="row">
@@ -10,7 +11,7 @@
                 <div class="service-banner-wrap">
                     <div class="service-banner-left">
                         <div class="Animation-2d">
-                            <h2 class="wow animate__animated animate__zoomIn"> 3D Product Services</h2>
+                            <h2 class="wow animate__animated animate__zoomIn"> 3D Product <span>Videos</span></h2>
                             <p class="wow animate__animated animate__zoomIn">
                                 Realistic | High Impact | Boost Sales
                             </p>
@@ -20,13 +21,15 @@
                         </div>
 
                     </div>
-                    <div class="service-banner-right">
-                        <div class="embed-responsive embed-responsive-21by9 wow animate__animated animate__zoomIn">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                    <!--<div class="service-banner-right service-video">-->
+                    @*<img class="img-fluid" src="~/Assets/img/services-video.png" />*@
+                    @*<div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rSXRBA4Npyw?si=d6hh9LORvZbU-clC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>*@
+                    <!--</div>-->
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UKuHk9H2Luk?si=LP7EUiNW0wDjjTuB" allowfullscreen></iframe>
                     </div>
 
                 </div>
@@ -41,78 +44,127 @@
     </div>
 </div>
 
-
-
 <section class="services Animation-vedio-2d">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-12">
-                <h4 class="heading text-center wow animate__animated animate__fadeInUp">
-                    3D PRODUCT VIDEOS
-                </h4>
-                <p class="wow animate__animated animate__fadeInUp">
-                    Explore our 3D Product Videos Showcase to see how we bring products to life with stunning detail and creativity!
-                </p>
-                
-            </div>
+        <div class="services-animation-head">
+            <h4 class="heading text-center wow animate__animated animate__fadeInUp">
+                3D PRODUCT <span>VIDEOS</span>
+            </h4>
+            <p class="wow animate__animated animate__fadeInUp">
+                Explore our 3D Product Videos Showcase to see how we bring products to life with stunning detail and creativity!
+            </p>
         </div>
         <div class="d-flex flex-wrap row-items-3">
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/portrait-man-cartoon-style.jpg"
-                         class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/portrait-man-cartoon-style.jpg"
+                        class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" style="border: none;"
+                                src="https://www.youtube.com/embed/uXrIJFfadjQ?si=rbu3ySnKCHpVPI9v" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d animation 01.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/_IlGxC4wQKQ?si=GKf01G0BJRpyizCW" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/3d product.jpeg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/fSOgDogX9rg?si=kYlS74yRorIofCYU" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/Explainer Video.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe  embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/8OoA_wPWZuI?si=iq9T6eDq6eCcPBHi" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/motion graphic.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/OeOKurXeRAg?si=FhdwBNhIV7J1_YUS" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/E-Learning.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/DUBUie04VqU?si=4uQv8eb4wyiD2Uzi" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">
+                    @*<img src="../Assets/img/Services-images/design.jpg" class="img-fluid card-img-top" alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/QM75FQO6POs?si=bpMaX9RZsgXcxVxv" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/website-development.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/xJoM--70S-Q?si=lhacr7B_MlPR2phi" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-            <div class="col wow animate__animated animate__fadeInUp">
+            <div class="col wow animate__animated animate__zoomIn">
                 <div class="services-card">
-                    <img src="~/Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
-                         alt="...">
+                    @*<img src="../Assets/img/Services-images/digital marketing.jpg" class="img-fluid card-img-top"
+                        alt="...">*@
+                    <div class="div-iframe embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" width="339" height="180" style="border: none;"
+                                src="https://www.youtube.com/embed/aGLNCzbyi6c?si=UHtbvGroySyrCung" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="text-center Animation-vedio-2d-foot">
-            <button class="btn btn-lg btn-primary"> Explore more 3D product videos</button>
+        <div class="text-center Animation-vedio-2d-foot  wow animate__animated animate__fadeInUp">
+            <a href="https://www.youtube.com/playlist?list=PLgJIOcJ0KegxbnsIJs0gRhDhJYMzoG0pt" target="_blank" class="btn btn-lg btn-primary"> Explore more 3D product videos </a>
             <p>
                 Click on the above button. Fill your requirements and explore more such 3D animations right for your business growth
             </p>
@@ -121,7 +173,7 @@
     </div>
 </section>
 
-<section class="Video-boost">
+<section class="services-Video-boost  Video-boost wow animate__animated animate__bounceIn">
     <div class="container">
         <div class="text-center">
             <h2>
@@ -132,18 +184,25 @@
     </div>
 </section>
 
+
 <section class="animation-story">
     <div class="story-video">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D Animation Story.png" />
+                <div class="brand-boost-img  wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #ff585d;"> Marketing & Advertising</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/marketing & advertising.png" />
                 </div>
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading"> Marketing & Advertising</h4>
-                    <p>3D product animations are highly effective in commercials, online ads, and social media campaigns.</p>
-                    <p>They allow businesses to highlight key product features, show the product in action, and create visually appealing content that grabs attention, leading to increased interest and customer engagement</p>
+                <div class="brand-boost-content  wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #ff585d;"> Marketing & Advertising</h4>
+                    <p>
+                        3D product animations are highly effective in commercials, online ads, and social media campaigns.
+                    </p>
+                    <br>
+                    <p>
+                        They allow businesses to highlight key product features, show the product in action, and create visually appealing content that grabs attention, leading to increased interest and customer engagement.
+                    </p>
                 </div>
             </div>
         </div>
@@ -151,14 +210,16 @@
     <div class="rhymes-kids">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading"> E-commerce</h4>
+                <div class="brand-boost-content  wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> E-commerce</h4>
                     <p>In e-commerce, 3D animations provide customers with a 360-degree view of products, making it easier for them to explore every detail.</p>
-                    <p>This enhanced visual experience leads to higher engagement, reducing uncertainty and increasing the likelihood of conversions.</p>                    
+                    <br />
+                    <p>This enhanced visual experience leads to higher engagement, reducing uncertainty and increasing the likelihood of conversions.</p>
                 </div>
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D rhymes for kids.png" />
+                <div class="brand-boost-img  wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #01a6ff;"> E-commerce</h4>
+                   
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/Ecommerce.png" />
                 </div>
             </div>
         </div>
@@ -167,15 +228,16 @@
     <div class="demo-launch">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D Products.png" />
-                </div>
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading">Product Demonstrations</h4>
-                    <p>For products with complex features or functionality, 3D animations offer clear, detailed demonstrations. </p>
-                    <p>These animations break down how a product works, making it easier for potential customers to understand its benefits and usage, reducing the need for lengthy explanations.</p>
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Product Demonstrations</h4>
                     
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/product demonstration.png" />
+                </div>
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #ff9bc3;"> Product Demonstrations</h4>
+                    <p>For products with complex features or functionality, 3D animations offer clear, detailed demonstrations.</p>
+                    <br />
+                    <p>These animations break down how a product works, making it easier for potential customers to understand its benefits and usage, reducing the need for lengthy explanations.</p>
                 </div>
             </div>
         </div>
@@ -183,14 +245,21 @@
     <div class="promo-video">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading">Trade Shows & Exhibitions</h4>
-                    <p>At trade shows and exhibitions, 3D animations serve as attention-grabbing tools. </p>
-                    <p>Eye-catching visuals, combined with dynamic product presentations, help companies stand out in crowded spaces and effectively inform visitors about the product's unique selling points.</p>
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Trade Shows & Exhibitions</h4>
+                    <p>
+                        At trade shows and exhibitions, 3D animations serve as attention-grabbing tools.
+                    </p>
+                    <br>
+                    <p>
+                        Eye-catching visuals, combined with dynamic product presentations, help companies stand out in crowded spaces and effectively inform visitors about the product's unique selling points.
+                    </p>
+
                 </div>
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D Medical.png" />
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Trade Shows & Exhibitions</h4>
+                   
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/trade show and exhibitions.png" />
                 </div>
             </div>
         </div>
@@ -198,63 +267,89 @@
     <div class="how-video">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D industrial.png" />
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Training & Tutorials</h4>
+                    
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/training & Tutorial.png" />
                 </div>
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading"> Training & Tutorials</h4>
-                    <p>3D animations are ideal for creating instructional videos, offering step-by-step guides on product usage, assembly, or maintenance.</p>
-                    <p>These clear, visually driven tutorials improve the user experience by making complex tasks simpler to follow and execute.</p>
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #34def2;"> Training & Tutorials</h4>
+                    <p>
+                        3D animations are ideal for creating instructional videos, offering step-by-step guides on product usage, assembly, or maintenance.
+                    </p>
+                    <br>
+                    <p>
+                        These clear, visually driven tutorials improve the user experience by making complex tasks simpler to follow and execute.
+                    </p>
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="education-video">
+    <div class="promo-video">
         <div class="container">
             <div class="brand-boost-wrap">
-                <div class="brand-boost-content">
-                    <h4 class="boost-heading"> Investor Presentations</h4>
-                    <p>In presentations to potential investors, 3D product animations bring a product to life in a visually compelling manner. </p>
-                    <p>They effectively communicate the product’s value, design, and functionality, helping investors grasp its potential impact in the market.</p>
+                <div class="brand-boost-content wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Investor Presentations</h4>
+                    <p>
+                        In presentations to potential investors, 3D product animations bring a product to life in a visually compelling manner.
+                    </p>
+                    <br>
+                    <p>
+                        They effectively communicate the product’s value, design, and functionality, helping investors grasp its potential impact in the market.
+                    </p>
+
                 </div>
-                <div class="brand-boost-img">
-                    <img class="img-fluid"
-                         src="~/Assets/img/Services-images/03 For 3D animation page service/3D Education Video.png" />
+                <div class="brand-boost-img wow animate__animated animate__zoomIn">
+                    <h4 class="boost-heading" style="background-color: #7b90ff;">Investor Presentations</h4>
+                   
+                    <img class="img-fluid" src="~/Assets/img/Services-images/04 3d Product page service/investor presentation.png" />
                 </div>
             </div>
         </div>
     </div>
+
+
 </section>
 
 <section class="benefits">
     <div class="container">
-        <div class="benefits-head text-center">
+        <div class="benefits-head text-center wow animate__animated animate__zoomIn">
             <h3> Here are some statistics that demonstrate the </h3>
-            <h2><span class="text-primary">BENEFITS OF 3D PRODUCT ANIMATION VIDEOS FOR BUSINESSES:</span></h2>
+            <h2 class="heading"><span class="text-primary">BENEFITS OF 3D PRODUCT ANIMATION VIDEOS FOR BUSINESSES:</span></h2>
         </div>
         <div class="benefits-body">
-            <div class="benefits-point">
-                <h4> <span class="text-primary">INCREASED ENGAGEMENT:</span></h4>
-                <p>Products with 3D animations receive up to 400% more engagement compared to static images.</p>
+            <div class="d-lg-none d-md-block text-center">
+                <img class="img-fluid" src="~/Assets/img/service-fox.jpg">
             </div>
-            <div class="benefits-point">
-                <h4> <span class="text-primary"> Higher Conversion Rates:</span></h4>
-                <p>Including 3D animations can boost conversion rates by 20% or more, as customers feel more informed and confident in their purchasing decisions.</p>
-            </div>
-            <div class="benefits-point">
-                <h4> <span class="text-primary">Improved Retention:</span></h4>
-                <p>  Viewers retain 95% of a message when they watch it in a video format, compared to 10% when reading text.</p>
+            <div class="benefits-wrap">
+                <div class="benefits-content">
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">INCREASED ENGAGEMENT:</span></h4>
+                        <p> Products with 3D animations receive up to 400% more engagement compared to static images.</p>
 
-            </div>
-            <div class="benefits-point">
-                <h4> <span class="text-primary">Enhanced Customer Experience:</span></h4>
-                <p>83% of consumers say they prefer learning about products through video rather than reading about them.</p>
-            </div>
-            <div class="benefits-point">
-                <h4> <span class="text-primary">Greater Interest:</span></h4>
-                <p>71% of consumers say they would share a 3D product video with others, increasing brand exposure and reach.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Higher Conversion Rates:</span></h4>
+                        <p>Including 3D animations can boost conversion rates by 20% or more, as customers feel more informed and confident in their purchasing decisions.</p>
+                        
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary"> Improved Retention:</span></h4>
+                        <p> Viewers retain 95% of a message when they watch it in a video format, compared to 10% when reading text.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Enhanced Customer Experience:</span></h4>
+                        <p> 83% of consumers say they prefer learning about products through video rather than reading about them.</p>
+                    </div>
+                    <div class="benefits-point wow animate__animated animate__zoomIn">
+                        <h4> <span class="text-primary">Greater Interest:</span></h4>
+                        <p> 71% of consumers say they would share a 3D product video with others, increasing brand exposure and reach.</p>
+                    </div>
+                </div>
+                <div class="benefits-fox wow animate__animated animate__zoomIn d-lg-block d-md-none d-sm-none">
+                    <img class="img-fluid" src="~/Assets/img/Services-images/2D-animation-page-service/2D-Animation-fox.png" />
+                </div>
             </div>
         </div>
     </div>
