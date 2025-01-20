@@ -168,7 +168,16 @@ footer {
 
             .socialIcons li a img {
                 width: 25px;
+                transition: 0.5s;
             }
+
+                .socialIcons li a img:hover {
+                    transform: rotate(360deg);
+                }
+
+footer .foot-menu {
+    display: flex;
+}
 
 footer .foot-menu {
     display: flex;
