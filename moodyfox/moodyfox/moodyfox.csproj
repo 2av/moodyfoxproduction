@@ -188,6 +188,7 @@
     <Content Include="Assets\css\owl.carousel.min.css" />
     <Content Include="Assets\css\owl.theme.default.min.css" />
     <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\favicon.png" />
     <Content Include="Assets\fonts\barlow-black-demo.html" />
     <Content Include="Assets\fonts\barlow-bold-demo.html" />
     <Content Include="Assets\fonts\barlow-extrabold-demo.html" />
