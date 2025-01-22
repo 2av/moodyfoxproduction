@@ -8,6 +8,7 @@ namespace moodyfox.Models
 {
     public class EnquiryFormViewModel
     {
+        public int Id { get; set; }
         [Required(ErrorMessage = "First Name is required")]
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -18,6 +19,7 @@ namespace moodyfox.Models
         public string ReferenceVideo { get; set; }
         public string ServiceRequirement { get; set; }
         public string Message { get; set; }
+        public bool IsCompleted { get; set; }
     }
 
 }

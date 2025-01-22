@@ -74,23 +74,63 @@ function handleFormSubmission(event) {
         body: `First Name: ${document.getElementById('fname').value}\nLast Name: ${document.getElementById('Lname').value}\nReference Video: ${document.getElementById('feference-video').value}\nService Requirement: ${document.getElementById('Service-Requirement').value}\nMessage: ${document.querySelector('textarea').value}`
     };
 
+    const formData = {
+        FirstName: document.getElementById('fname').value,
+        LastName: document.getElementById('Lname').value,
+        Email: document.getElementById('email').value,
+        Contact: document.getElementById('contact').value,
+        ReferenceVideo: document.getElementById('feference-video').value,
+        ServiceRequirement: document.getElementById('Service-Requirement').value,
+        Message: document.getElementById('message').value
+    };
+
     // AJAX call to send form data
+    //$.ajax({
+    //    type: "POST",
+    //    url: "/Home/SendEmail",
+    //    data: emailData,
+    //    success: function (response) {
+    //        if (response.success) {
+    //            // Show success modal
+    //            $('#contectform').modal('show');
+    //        } else {
+    //            // Show warning modal with server error
+    //            document.getElementById('validation-errors').innerHTML = response.message;
+    //            $('#warning-message').modal('show');
+    //        }
+    //    },
+    //    error: function () {
+    //        // Show warning modal on AJAX error
+    //        document.getElementById('validation-errors').innerHTML = 'An error occurred while submitting the form.';
+    //        $('#warning-message').modal('show');
+    //    }
+    //});
+
+    // AJAX call to save form data
     $.ajax({
         type: "POST",
-        url: "/Home/SendEmail",
-        data: emailData,
+        url: "/Home/SaveFormData",
+        contentType: "application/json",
+        data: JSON.stringify(formData),
         success: function (response) {
             if (response.success) {
-                // Show success modal
+                //alert(response.message);
                 $('#contectform').modal('show');
+
+                // Clear form fields after successful submission
+                document.getElementById('fname').value = '';
+                document.getElementById('Lname').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('contact').value = '';
+                document.getElementById('feference-video').value = '';
+                document.getElementById('Service-Requirement').value = '';
+                document.getElementById('message').value = '';
             } else {
-                // Show warning modal with server error
                 document.getElementById('validation-errors').innerHTML = response.message;
                 $('#warning-message').modal('show');
             }
         },
         error: function () {
-            // Show warning modal on AJAX error
             document.getElementById('validation-errors').innerHTML = 'An error occurred while submitting the form.';
             $('#warning-message').modal('show');
         }

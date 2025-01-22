@@ -371,9 +371,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Assets\fonts\barlow-black-webfont.woff" />
     <Content Include="Assets\fonts\barlow-black-webfont.woff2" />
@@ -411,6 +409,7 @@
     <Content Include="Assets\blog\fonts\barlow-semibold-webfont.woff2" />
     <Content Include="Assets\blog\fonts\barlow-thin-webfont.woff" />
     <Content Include="Assets\blog\fonts\barlow-thin-webfont.woff2" />
+    <Content Include="App_Data\form_data.json" />
     <None Include="packages.config" />
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Service\_3DAnimation.cshtml" />
@@ -423,6 +422,7 @@
     <Content Include="Views\Service\_eLearningVideos.cshtml" />
     <Content Include="Views\Faq\Index.cshtml" />
     <Content Include="Views\Blog\details.cshtml" />
+    <Content Include="Views\Home\Enquiry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
