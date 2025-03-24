@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container mt-5">
+<div class="container">
 
 
     <!-- Password Prompt Modal -->
@@ -18,24 +18,27 @@
     <!-- Table Section (Initially Hidden) -->
     <div id="dataSection" class="mt-5" style="display:none">
         <h2 class="text-center">Enquiry Details</h2>
-        <table class="table table-bordered table-striped">
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Contact</th>
-                    <th>Reference Video</th>
-                    <th>Service Requirement</th>
-                    <th>Message</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="formDataTable">
-                <!-- Data will be dynamically inserted here -->
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead style="background-color: #191928; color: #fe9000 ">
+                    <tr>
+                        <th>Sr.</th>
+                        <th>Name</th>
+                        <th>Email/Contact</th>
+                        <th>Contact</th>
+                        <th>Reference Video</th>
+                        <th>Service Requirement</th>
+                        <th>Message</th>
+                        <th>Enquiry Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="formDataTable">
+                    <!-- Data will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -93,16 +96,21 @@
                     tableBody.innerHTML = ""; // Clear any existing data
 
                     response.data.forEach((item, index) => {
+                        const rawDate = item.EnquiryDate;
+                        const formattedDate = rawDate
+                            ? new Date(parseInt(rawDate.match(/\/Date\((\d+)\)\//)[1])).toLocaleString()
+                            : "N/A";
                         const row = `
                                     <tr >
                                         <td>${index + 1}</td>
-                                        <td>${item.FirstName}</td>
-                                        <td>${item.LastName}</td>
+                                        <td>${item.FirstName} ${item.LastName}</td>
+                                       
                                         <td>${item.Email}</td>
                                         <td>${item.Contact || "N/A"}</td>
                                         <td>${item.ReferenceVideo}</td>
                                         <td>${item.ServiceRequirement}</td>
                                         <td>${item.Message || "N/A"}</td>
+                                         <td>${formattedDate}</td>
                                         <td>
                                             <button class="btn btn-danger btn-sm" onclick="deleteRow(${item.Id})">Delete</button>
                                             <button class="btn btn-success btn-sm" onclick="markAsComplete(${item.Id})" ${item.IsCompleted ? 'disabled' : ''}>${item.IsCompleted ? 'Completed' : 'Mark as Complete'}
@@ -171,16 +179,18 @@
     }
 
 
-    // Event listener for password submission
-    document.getElementById("submitPasswordButton").addEventListener("click", function () {
-        const password = document.getElementById("passwordInput").value.trim();
-        if (!password) {
-            alert("Please enter a password.");
-            return;
-        }
+    if (document.getElementById("submitPasswordButton") != null) {
+        // Event listener for password submission
+        document.getElementById("submitPasswordButton").addEventListener("click", function () {
+            const password = document.getElementById("passwordInput").value.trim();
+            if (!password) {
+                alert("Please enter a password.");
+                return;
+            }
 
-        fetchFormData(password);
-    });
+            fetchFormData(password);
+        });
+    }
 </script>
 
 

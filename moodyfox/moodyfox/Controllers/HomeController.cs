@@ -113,6 +113,7 @@ namespace moodyfox.Controllers
                 var formDataList = JsonConvert.DeserializeObject<List<EnquiryFormViewModel>>(jsonData);
 
                 formData.Id = formDataList.Count > 0 ? formDataList.Max(x => x.Id) + 1 : 1;
+                formData.EnquiryDate = DateTime.Now;
                 // Add the new form data
                 existingData.Add(formData);
 
@@ -157,6 +158,13 @@ namespace moodyfox.Controllers
                 // Read and parse the JSON file
                 var fileContent = System.IO.File.ReadAllText(filePath);
                 var formData = JsonConvert.DeserializeObject<List<EnquiryFormViewModel>>(fileContent);
+                foreach (var entry in formData)
+                {
+                    if (entry.EnquiryDate == default(DateTime))
+                    {
+                        entry.EnquiryDate = DateTime.Now; 
+                    }
+                }
 
                 return Json(new { success = true, data = formData }, JsonRequestBehavior.AllowGet);
             }

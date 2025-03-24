@@ -410,7 +410,7 @@
     <Content Include="Assets\blog\fonts\barlow-semibold-webfont.woff2" />
     <Content Include="Assets\blog\fonts\barlow-thin-webfont.woff" />
     <Content Include="Assets\blog\fonts\barlow-thin-webfont.woff2" />
-    <Content Include="App_Data\form_data.json" />
+    <Content Include="App_Data\EnuiryData_Beta.json" />
     <None Include="packages.config" />
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Service\_3DAnimation.cshtml" />

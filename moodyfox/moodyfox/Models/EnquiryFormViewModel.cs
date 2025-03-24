@@ -20,6 +20,7 @@ namespace moodyfox.Models
         public string ServiceRequirement { get; set; }
         public string Message { get; set; }
         public bool IsCompleted { get; set; }
+        public DateTime EnquiryDate { get; set; }
     }
 
 }
